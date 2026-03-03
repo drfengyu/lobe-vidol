@@ -1,0 +1,69 @@
+{
+  "cancel": "Annuleren",
+  "close": "Sluiten",
+  "community": "Gemeenschapssteun",
+  "confirm": "Bevestigen",
+  "confirmDel": "Weet je zeker dat je dit wilt verwijderen?",
+  "defaultAssistant": "Standaardassistent",
+  "delete": "Verwijderen",
+  "download": {
+    "audio": "Download audio",
+    "avatar": "Download profielfoto",
+    "camera": "Download camera",
+    "cover": "Download omslag",
+    "dance": "Download dans",
+    "failed": "Download mislukt",
+    "model": "Download model",
+    "subscribe": "Abonneren op download",
+    "success": "Download succesvol"
+  },
+  "header": {
+    "chat": "Chat",
+    "discover": "Ontdekken",
+    "role": "Rol",
+    "settings": "Instellingen",
+    "tips": "Het project is momenteel in uitvoering, waardoor de stabiliteit van de gegevens niet gegarandeerd kan worden. Als u problemen ondervindt, kunt u in de systeeminstellingen de sessieberichten wissen en de systeeminstellingen resetten. Onze excuses voor het ongemak."
+  },
+  "installPWA": "Installeer Progressieve Webapp (PWA)",
+  "loading": "Laden...",
+  "menu": {
+    "discord": "Gemeenschapssteun",
+    "github": "Github",
+    "support": "Steun de auteur"
+  },
+  "noData": "Geen gegevens beschikbaar",
+  "play": "Afspelen",
+  "random": "Willekeurig",
+  "search": "Zoeken",
+  "sideBar": "Zijbalk",
+  "submit": "Indienen",
+  "subscribe": {
+    "success": "Afmelden is gelukt",
+    "undo": "Afmelden"
+  },
+  "support": "Gemeenschapssteun",
+  "theme": {
+    "auto": "Volg systeem",
+    "dark": "Donkere modus",
+    "light": "Lichte modus"
+  },
+  "uploadTip": "Klik of sleep bestanden naar dit gebied om te uploaden",
+  "userPanel": {
+    "anonymousNickName": "Anonieme gebruiker",
+    "billing": "Factuurbeheer",
+    "cloud": "Ervaar {{name}}",
+    "data": "Gegevensopslag",
+    "defaultNickname": "Gemeenschapsversie gebruiker",
+    "discord": "Gemeenschapssteun",
+    "docs": "Gebruikersdocumentatie",
+    "email": "E-mail ondersteuning",
+    "feedback": "Feedback en suggesties",
+    "help": "Helpcentrum",
+    "moveGuide": "De instellingenknop is hierheen verplaatst",
+    "plans": "Abonnementsplannen",
+    "preview": "Voorvertoning",
+    "profile": "Accountbeheer",
+    "setting": "App-instellingen",
+    "usages": "Gebruikstatistieken"
+  }
+}

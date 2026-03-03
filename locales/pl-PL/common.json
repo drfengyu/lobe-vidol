@@ -1,0 +1,69 @@
+{
+  "cancel": "Anuluj",
+  "close": "Zamknij",
+  "community": "Wsparcie społeczności",
+  "confirm": "Potwierdź",
+  "confirmDel": "Czy na pewno chcesz usunąć?",
+  "defaultAssistant": "Domyślny asystent",
+  "delete": "Usuń",
+  "download": {
+    "audio": "Pobierz dźwięk",
+    "avatar": "Pobierz awatar",
+    "camera": "Pobierz kamerę",
+    "cover": "Pobierz okładkę",
+    "dance": "Pobierz taniec",
+    "failed": "Pobieranie nie powiodło się",
+    "model": "Pobierz model",
+    "subscribe": "Pobierz subskrypcję",
+    "success": "Pobieranie zakończone sukcesem"
+  },
+  "header": {
+    "chat": "Czat",
+    "discover": "Odkryj",
+    "role": "Rola",
+    "settings": "Ustawienia",
+    "tips": "Projekt jest obecnie w trakcie budowy, nie gwarantujemy stabilności danych. W przypadku problemów można w ustawieniach systemu wyczyścić wiadomości sesji i zresetować ustawienia systemowe. Przepraszamy za wszelkie niedogodności."
+  },
+  "installPWA": "Zainstaluj aplikację progresywną (PWA)",
+  "loading": "Ładowanie...",
+  "menu": {
+    "discord": "Wsparcie społeczności",
+    "github": "Github",
+    "support": "Wsparcie dla autora"
+  },
+  "noData": "Brak danych",
+  "play": "Odtwarzaj",
+  "random": "Losowy",
+  "search": "Szukaj",
+  "sideBar": "Panel boczny",
+  "submit": "Prześlij",
+  "subscribe": {
+    "success": "Subskrypcja została anulowana",
+    "undo": "Anuluj subskrypcję"
+  },
+  "support": "Wsparcie społeczności",
+  "theme": {
+    "auto": "Automatyczny",
+    "dark": "Ciemny tryb",
+    "light": "Jasny tryb"
+  },
+  "uploadTip": "Kliknij lub przeciągnij plik do tego obszaru, aby go przesłać",
+  "userPanel": {
+    "anonymousNickName": "Użytkownik anonimowy",
+    "billing": "Zarządzanie fakturami",
+    "cloud": "Wypróbuj {{name}}",
+    "data": "Przechowywanie danych",
+    "defaultNickname": "Użytkownik wersji społecznościowej",
+    "discord": "Wsparcie społeczności",
+    "docs": "Dokumentacja użytkowania",
+    "email": "Wsparcie mailowe",
+    "feedback": "Opinie i sugestie",
+    "help": "Centrum pomocy",
+    "moveGuide": "Przycisk ustawień przeniesiony tutaj",
+    "plans": "Plany subskrypcyjne",
+    "preview": "Wersja podglądowa",
+    "profile": "Zarządzanie kontem",
+    "setting": "Ustawienia aplikacji",
+    "usages": "Statystyki użycia"
+  }
+}

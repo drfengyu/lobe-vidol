@@ -1,0 +1,128 @@
+{
+  "ModelSelect": {
+    "featureTag": {
+      "custom": "Mô hình tùy chỉnh, cài đặt mặc định hỗ trợ cả gọi hàm và nhận diện hình ảnh, vui lòng xác minh khả năng trên thực tế",
+      "file": "Mô hình này hỗ trợ tải lên tệp để đọc và nhận diện",
+      "functionCall": "Mô hình này hỗ trợ gọi hàm (Function Call)",
+      "tokens": "Mô hình này hỗ trợ tối đa {{tokens}} Tokens cho mỗi phiên",
+      "vision": "Mô hình này hỗ trợ nhận diện hình ảnh"
+    },
+    "removed": "Mô hình này không có trong danh sách, nếu bỏ chọn sẽ tự động bị xóa"
+  },
+  "actions": {
+    "add": "Thêm",
+    "copy": "Sao chép",
+    "copySuccess": "Sao chép thành công",
+    "del": "Xóa",
+    "delAndRegenerate": "Xóa và tái tạo",
+    "edit": "Chỉnh sửa",
+    "goBottom": "Quay lại cuối trang",
+    "regenerate": "Tái tạo",
+    "save": "Lưu",
+    "share": "Chia sẻ",
+    "tts": "Giọng nói"
+  },
+  "agentInfo": "Thông tin vai trò",
+  "agentMarket": "Thị trường nhân vật",
+  "animation": {
+    "animationList": "Danh sách hành động",
+    "postureList": "Danh sách tư thế",
+    "totalCount": "Tổng cộng {{total}} mục"
+  },
+  "apiKey": {
+    "addProxy": "Thêm địa chỉ proxy OpenAI (tùy chọn)",
+    "closeTip": "Đóng thông báo",
+    "confirmRetry": "Xác nhận và thử lại",
+    "proxyDocs": "Không rõ cách xin API Key?",
+    "startDesc": "Nhập API Key OpenAI của bạn để bắt đầu cuộc trò chuyện. Ứng dụng sẽ không ghi lại API Key của bạn.",
+    "startTitle": "Tùy chỉnh API Key"
+  },
+  "background": {
+    "backgroundList": "Danh sách nền",
+    "totalCount": "Tổng cộng {{total}} mục"
+  },
+  "callOff": "Kết thúc cuộc gọi",
+  "camera": "Gọi video",
+  "chat": "Trò chuyện",
+  "chatList": "Danh sách trò chuyện",
+  "clear": {
+    "action": "Xóa ngữ cảnh",
+    "alert": "Bạn có chắc chắn muốn xóa tin nhắn lịch sử không?",
+    "tip": "Hành động này không thể hoàn tác, xin hãy cẩn thận"
+  },
+  "danceList": "Danh sách khiêu vũ",
+  "danceMarket": "Thị trường khiêu vũ",
+  "delSession": "Xóa cuộc trò chuyện",
+  "delSessionAlert": "Bạn có chắc chắn muốn xóa cuộc trò chuyện này không? Sau khi xóa, bạn sẽ không thể khôi phục lại, xin hãy cẩn thận!",
+  "editRole": {
+    "action": "Chỉnh sửa vai trò"
+  },
+  "enableHistoryCount": {
+    "alias": "Không giới hạn",
+    "limited": "Chỉ bao gồm {{number}} tin nhắn cuộc trò chuyện",
+    "setlimited": "Sử dụng số lượng tin nhắn lịch sử",
+    "title": "Giới hạn số lượng tin nhắn lịch sử",
+    "unlimited": "Không giới hạn số lượng tin nhắn lịch sử"
+  },
+  "info": {
+    "background": "Nền",
+    "chat": "trò chuyện",
+    "dance": "nhảy múa",
+    "motions": "cử động",
+    "posture": "tư thế",
+    "stage": "Sân khấu"
+  },
+  "input": {
+    "alert": "Xin lưu ý: Mọi điều mà trí tuệ nhân tạo nói đều được tạo ra bởi AI",
+    "placeholder": "Nhập nội dung để bắt đầu trò chuyện",
+    "send": "Gửi",
+    "warp": "Xuống dòng"
+  },
+  "interactive": "Có thể tương tác",
+  "noDanceList": "Chưa có danh sách phát, bạn có thể đăng ký những điệu nhảy yêu thích của mình qua thị trường",
+  "noRoleList": "Chưa có danh sách vai trò",
+  "noSession": "Hiện tại không có cuộc hội thoại, bạn có thể tạo vai trò tùy chỉnh bằng cách nhấn +, hoặc thêm vai trò qua trang khám phá",
+  "selectModel": "Vui lòng chọn mô hình",
+  "sessionCreate": "Tạo cuộc trò chuyện",
+  "sessionList": "Danh sách phiên",
+  "share": {
+    "downloadScreenshot": "Tải xuống ảnh chụp màn hình",
+    "imageType": "Định dạng hình ảnh",
+    "screenshot": "Chụp màn hình",
+    "share": "Chia sẻ",
+    "shareGPT": "Chia sẻ GPT",
+    "shareToGPT": "Tạo liên kết chia sẻ ShareGPT",
+    "withBackground": "Bao gồm hình nền",
+    "withFooter": "Bao gồm chân trang",
+    "withSystemRole": "Bao gồm vai trò trợ lý"
+  },
+  "stage": {
+    "stageList": "Danh sách sân khấu",
+    "totalCount": "Tổng cộng {{total}} mục"
+  },
+  "token": {
+    "overload": "Token vượt quá",
+    "remained": "Token còn lại",
+    "tokenCount": "Số lượng Token",
+    "useToken": "Tính toán số lượng Token đã tiêu thụ, bao gồm tin nhắn, cài đặt vai trò và ngữ cảnh: {{usedTokens}} / {{maxValue}}",
+    "used": "Token đã sử dụng"
+  },
+  "toolBar": {
+    "axes": "Trục tọa độ",
+    "cameraControl": "Điều khiển ống kính",
+    "cameraHelper": "Trợ giúp ống kính",
+    "downloading": "Đang tải mô hình, vui lòng chờ...",
+    "fullScreen": "Chuyển đổi chế độ toàn màn hình",
+    "grid": "Lưới",
+    "interactiveOff": "Tắt tương tác cảm ứng",
+    "interactiveOn": "Bật tương tác cảm ứng",
+    "resetCamera": "Đặt lại ống kính",
+    "resetToIdle": "Dừng hành động nhảy múa",
+    "screenShot": "Chụp ảnh"
+  },
+  "tts": {
+    "combine": "Tổng hợp giọng nói",
+    "record": "Nhận diện giọng nói (cần có mạng khoa học)"
+  },
+  "voiceOn": "Bật giọng nói"
+}

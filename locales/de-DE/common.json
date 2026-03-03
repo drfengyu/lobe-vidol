@@ -1,0 +1,69 @@
+{
+  "cancel": "Abbrechen",
+  "close": "Schließen",
+  "community": "Gemeinschaftsunterstützung",
+  "confirm": "Bestätigen",
+  "confirmDel": "Möchten Sie wirklich löschen?",
+  "defaultAssistant": "Standardassistent",
+  "delete": "Löschen",
+  "download": {
+    "audio": "Audio herunterladen",
+    "avatar": "Avatar herunterladen",
+    "camera": "Kamera herunterladen",
+    "cover": "Cover herunterladen",
+    "dance": "Tanz herunterladen",
+    "failed": "Download fehlgeschlagen",
+    "model": "Modell herunterladen",
+    "subscribe": "Abonnieren herunterladen",
+    "success": "Download erfolgreich"
+  },
+  "header": {
+    "chat": "Chat",
+    "discover": "Entdecken",
+    "role": "Rolle",
+    "settings": "Einstellungen",
+    "tips": "Das Projekt befindet sich derzeit in der Bauphase, daher kann die Datenstabilität nicht garantiert werden. Bei Problemen können Sie in den Systemeinstellungen die Sitzungsnachrichten löschen und die Systemeinstellungen zurücksetzen. Wir bitten um Ihr Verständnis für eventuelle Unannehmlichkeiten."
+  },
+  "installPWA": "Progressive Web App (PWA) installieren",
+  "loading": "Wird geladen...",
+  "menu": {
+    "discord": "Community Support",
+    "github": "Github",
+    "support": "Unterstütze den Autor"
+  },
+  "noData": "Keine Daten verfügbar",
+  "play": "Abspielen",
+  "random": "Zufällig",
+  "search": "Suche",
+  "sideBar": "Seitenleiste",
+  "submit": "Einreichen",
+  "subscribe": {
+    "success": "Abonnement wurde gekündigt",
+    "undo": "Abonnement kündigen"
+  },
+  "support": "Gemeinschaftsunterstützung",
+  "theme": {
+    "auto": "System folgen",
+    "dark": "Dunkler Modus",
+    "light": "Heller Modus"
+  },
+  "uploadTip": "Klicken Sie hier oder ziehen Sie die Datei in diesen Bereich, um sie hochzuladen",
+  "userPanel": {
+    "anonymousNickName": "Anonymer Benutzer",
+    "billing": "Rechnungsverwaltung",
+    "cloud": "Erlebe {{name}}",
+    "data": "Datenlagerung",
+    "defaultNickname": "Community-Version Benutzer",
+    "discord": "Community Support",
+    "docs": "Nutzungsdokumentation",
+    "email": "E-Mail-Support",
+    "feedback": "Feedback und Vorschläge",
+    "help": "Hilfezentrum",
+    "moveGuide": "Der Einstellungsbutton wurde hierher verschoben",
+    "plans": "Abonnementpläne",
+    "preview": "Vorschauversion",
+    "profile": "Kontoverwaltung",
+    "setting": "App-Einstellungen",
+    "usages": "Nutzungsstatistik"
+  }
+}

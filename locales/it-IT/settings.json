@@ -1,0 +1,175 @@
+{
+  "common": {
+    "chat": {
+      "avatar": {
+        "desc": "Avatar personalizzato",
+        "title": "Avatar"
+      },
+      "nickName": {
+        "desc": "Soprannome personalizzato",
+        "placeholder": "Inserisci il soprannome",
+        "title": "Soprannome"
+      },
+      "title": "Impostazioni chat"
+    },
+    "system": {
+      "clear": {
+        "action": "Cancella immediatamente",
+        "alert": "Confermi di voler cancellare tutti i messaggi di conversazione?",
+        "desc": "Questo cancellerà tutti i dati delle conversazioni e dei personaggi, inclusi l'elenco delle conversazioni, l'elenco dei personaggi, i messaggi delle conversazioni, ecc.",
+        "success": "Cancellazione riuscita",
+        "tip": "L'operazione non può essere annullata, dopo la cancellazione i dati non possono essere recuperati, si prega di procedere con cautela",
+        "title": "Cancella tutti i messaggi di conversazione"
+      },
+      "clearCache": {
+        "action": "Cancella subito",
+        "alert": "Sei sicuro di voler cancellare tutta la cache?",
+        "calculating": "Calcolo della dimensione della cache in corso...",
+        "desc": "Questo cancellerà la cache dei dati scaricati dall'app, inclusi i dati dei modelli dei personaggi, i dati vocali, i dati dei modelli delle danze, i dati audio, ecc.",
+        "success": "Cancellazione avvenuta con successo",
+        "tip": "L'operazione non può essere annullata, dopo la cancellazione i dati dovranno essere riscaricati, si prega di procedere con cautela",
+        "title": "Cancella la cache dei dati"
+      },
+      "reset": {
+        "action": "Ripristina immediatamente",
+        "alert": "Confermi di voler ripristinare tutte le impostazioni di sistema?",
+        "desc": "Questo ripristinerà tutte le impostazioni di sistema, comprese le impostazioni del tema, le impostazioni della chat, le impostazioni del modello linguistico, ecc.",
+        "success": "Ripristino riuscito",
+        "tip": "L'operazione non può essere annullata, dopo il ripristino i dati non possono essere recuperati, si prega di procedere con cautela",
+        "title": "Ripristina impostazioni di sistema"
+      },
+      "title": "Impostazioni di sistema"
+    },
+    "theme": {
+      "backgroundEffect": {
+        "desc": "Effetto di sfondo personalizzato",
+        "glow": "Bagliore",
+        "none": "Nessuno sfondo",
+        "title": "Effetto di sfondo"
+      },
+      "locale": {
+        "auto": "Segui il sistema",
+        "desc": "Lingua di sistema personalizzata",
+        "title": "Lingua"
+      },
+      "neutralColor": {
+        "desc": "Grigi personalizzati con diverse inclinazioni di colore",
+        "title": "Colore neutro"
+      },
+      "primaryColor": {
+        "desc": "Colore del tema personalizzato",
+        "title": "Colore principale"
+      },
+      "title": "Impostazioni tema"
+    },
+    "title": "Impostazioni generali"
+  },
+  "header": {
+    "desc": "Preferenze e impostazioni del modello",
+    "global": "Impostazioni globali",
+    "session": "Impostazioni della sessione",
+    "sessionDesc": "Impostazioni del ruolo e preferenze della sessione",
+    "sessionWithName": "Impostazioni della sessione · {{name}}",
+    "title": "Impostazioni"
+  },
+  "llm": {
+    "aesGcm": "La tua chiave e l'indirizzo del proxy saranno crittografati utilizzando l'algoritmo di crittografia <1>AES-GCM</1>",
+    "apiKey": {
+      "desc": "Si prega di inserire la tua {{name}} API Key",
+      "placeholder": "{{name}} API Key",
+      "title": "API Key"
+    },
+    "checker": {
+      "button": "Controlla",
+      "desc": "Verifica se l'API Key e l'indirizzo del proxy sono stati inseriti correttamente",
+      "error": "Controllo fallito",
+      "pass": "Controllo superato",
+      "title": "Verifica connettività"
+    },
+    "customModelCards": {
+      "addNew": "Crea e aggiungi il modello {{id}}",
+      "config": "Configura il modello",
+      "confirmDelete": "Stai per eliminare questo modello personalizzato, una volta eliminato non sarà recuperabile, procedi con cautela.",
+      "modelConfig": {
+        "azureDeployName": {
+          "extra": "Campo richiesto per la richiesta effettiva in Azure OpenAI",
+          "placeholder": "Inserisci il nome del modello distribuito in Azure",
+          "title": "Nome distribuzione modello"
+        },
+        "displayName": {
+          "placeholder": "Inserisci il nome di visualizzazione del modello, ad esempio ChatGPT, GPT-4, ecc.",
+          "title": "Nome di visualizzazione modello"
+        },
+        "files": {
+          "extra": "L'attuale implementazione del caricamento file è solo una soluzione temporanea, limitata a tentativi personali. Attendere implementazioni complete per la capacità di caricamento file.",
+          "title": "Supporto per il caricamento file"
+        },
+        "functionCall": {
+          "extra": "Questa configurazione abiliterà solo la capacità di chiamata di funzioni nell'app, il supporto per le chiamate di funzioni dipende interamente dal modello stesso, si prega di testare la disponibilità delle chiamate di funzioni di questo modello.",
+          "title": "Supporto per chiamate di funzioni"
+        },
+        "id": {
+          "extra": "Sarà visualizzato come etichetta del modello",
+          "placeholder": "Inserisci l'id del modello, ad esempio gpt-4-turbo-preview o claude-2.1",
+          "title": "ID modello"
+        },
+        "modalTitle": "Configurazione modello personalizzato",
+        "tokens": {
+          "title": "Numero massimo di token",
+          "unlimited": "Illimitato"
+        },
+        "vision": {
+          "extra": "Questa configurazione abiliterà solo la configurazione di caricamento immagini nell'app, il supporto per il riconoscimento dipende interamente dal modello stesso, si prega di testare la disponibilità delle capacità di riconoscimento visivo di questo modello.",
+          "title": "Supporto per riconoscimento visivo"
+        }
+      }
+    },
+    "fetchOnClient": {
+      "desc": "La modalità di richiesta client invierà direttamente la richiesta di sessione dal browser, migliorando la velocità di risposta",
+      "title": "Utilizza la modalità di richiesta client"
+    },
+    "fetcher": {
+      "fetch": "Ottieni l'elenco dei modelli",
+      "fetching": "Sto ottenendo l'elenco dei modelli...",
+      "latestTime": "Ultimo aggiornamento: {{time}}",
+      "noLatestTime": "Elenco non ancora ottenuto"
+    },
+    "helpDoc": "Guida alla configurazione",
+    "modelList": {
+      "desc": "Seleziona i modelli da visualizzare nella sessione; i modelli selezionati verranno mostrati nell'elenco dei modelli",
+      "placeholder": "Seleziona un modello dall'elenco",
+      "title": "Elenco dei modelli",
+      "total": "Totale di {{count}} modelli disponibili"
+    },
+    "proxyUrl": {
+      "desc": "Oltre all'indirizzo predefinito, deve includere http(s)://",
+      "title": "Indirizzo proxy API"
+    },
+    "title": "Modello Linguistico",
+    "waitingForMore": "Altri modelli sono in fase di <1>programmazione per l'integrazione</1>, resta sintonizzato"
+  },
+  "systemAgent": {
+    "customPrompt": {
+      "addPrompt": "Aggiungi suggerimento personalizzato",
+      "desc": "Una volta compilato, l'assistente di sistema utilizzerà il suggerimento personalizzato nella generazione dei contenuti",
+      "placeholder": "Inserisci il suggerimento personalizzato",
+      "title": "Parola chiave personalizzata"
+    },
+    "emotionAnalysis": {
+      "label": "Modello di analisi delle emozioni",
+      "modelDesc": "Specifica il modello da utilizzare per l'analisi delle emozioni",
+      "title": "Analisi delle emozioni automatica"
+    },
+    "title": "Agente di sistema"
+  },
+  "touch": {
+    "title": "Impostazioni di tocco"
+  },
+  "tts": {
+    "clientCall": {
+      "desc": "Se abilitato, verrà utilizzato il servizio di sintesi vocale tramite chiamata client, la sintesi vocale sarà più veloce, ma è necessario avere accesso a Internet o la capacità di accedere a reti esterne.",
+      "title": "Chiamata client"
+    },
+    "title": "Impostazioni vocali"
+  }
+}

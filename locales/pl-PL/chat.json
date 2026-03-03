@@ -1,0 +1,128 @@
+{
+  "ModelSelect": {
+    "featureTag": {
+      "custom": "Model niestandardowy, domyślne ustawienia obsługują zarówno wywołania funkcji, jak i rozpoznawanie wizualne. Proszę zweryfikować dostępność powyższych możliwości w zależności od rzeczywistych potrzeb",
+      "file": "Ten model obsługuje przesyłanie plików do odczytu i rozpoznawania",
+      "functionCall": "Ten model obsługuje wywołania funkcji (Function Call)",
+      "tokens": "Ten model obsługuje maksymalnie {{tokens}} tokenów w pojedynczej sesji",
+      "vision": "Ten model obsługuje rozpoznawanie wizualne"
+    },
+    "removed": "Ten model nie znajduje się na liście, jeśli odznaczysz, zostanie automatycznie usunięty"
+  },
+  "actions": {
+    "add": "Dodaj",
+    "copy": "Kopiuj",
+    "copySuccess": "Kopiowanie zakończone sukcesem",
+    "del": "Usuń",
+    "delAndRegenerate": "Usuń i regeneruj",
+    "edit": "Edytuj",
+    "goBottom": "Przejdź na dół",
+    "regenerate": "Regeneruj",
+    "save": "Zapisz",
+    "share": "Udostępnij",
+    "tts": "Głos"
+  },
+  "agentInfo": "Informacje o roli",
+  "agentMarket": "Rynek postaci",
+  "animation": {
+    "animationList": "Lista animacji",
+    "postureList": "Lista postaw",
+    "totalCount": "Łącznie {{total}} pozycji"
+  },
+  "apiKey": {
+    "addProxy": "Dodaj adres proxy OpenAI (opcjonalnie)",
+    "closeTip": "Zamknij wskazówkę",
+    "confirmRetry": "Potwierdź i spróbuj ponownie",
+    "proxyDocs": "Nie wiesz, jak ubiegać się o klucz API?",
+    "startDesc": "Wprowadź swój klucz API OpenAI, aby rozpocząć rozmowę. Aplikacja nie będzie rejestrować twojego klucza API.",
+    "startTitle": "Dostosuj klucz API"
+  },
+  "background": {
+    "backgroundList": "Lista tła",
+    "totalCount": "Łącznie {{total}} pozycji"
+  },
+  "callOff": "Zakończ połączenie",
+  "camera": "Wideokonferencja",
+  "chat": "Czat",
+  "chatList": "Lista czatów",
+  "clear": {
+    "action": "Wyczyść kontekst",
+    "alert": "Czy na pewno chcesz usunąć historię wiadomości?",
+    "tip": "Ta operacja jest nieodwracalna, proszę działać ostrożnie"
+  },
+  "danceList": "Lista tańców",
+  "danceMarket": "Rynek tańca",
+  "delSession": "Usuń sesję",
+  "delSessionAlert": "Czy na pewno chcesz usunąć rozmowę? Po usunięciu nie będzie można jej przywrócić, proszę działać ostrożnie!",
+  "editRole": {
+    "action": "Edytuj rolę"
+  },
+  "enableHistoryCount": {
+    "alias": "Brak ograniczeń",
+    "limited": "Zawiera tylko {{number}} wiadomości sesji",
+    "setlimited": "Ustaw liczbę wiadomości w historii",
+    "title": "Ogranicz liczbę wiadomości w historii",
+    "unlimited": "Brak ograniczeń w historii wiadomości"
+  },
+  "info": {
+    "background": "Tło",
+    "chat": "czat",
+    "dance": "taniec",
+    "motions": "ruchy",
+    "posture": "postawa",
+    "stage": "Scena"
+  },
+  "input": {
+    "alert": "Pamiętaj: wszystko, co mówi inteligentny agent, jest generowane przez AI",
+    "placeholder": "Wprowadź treść, aby rozpocząć czat",
+    "send": "Wyślij",
+    "warp": "Złamanie linii"
+  },
+  "interactive": "Interaktywny",
+  "noDanceList": "Brak dostępnych list odtwarzania. Możesz subskrybować ulubione tańce na rynku.",
+  "noRoleList": "Brak dostępnych ról",
+  "noSession": "Brak aktywnej sesji, możesz stworzyć własną rolę przez + lub dodać rolę przez stronę odkrywania",
+  "selectModel": "Wybierz model",
+  "sessionCreate": "Utwórz czat",
+  "sessionList": "Lista sesji",
+  "share": {
+    "downloadScreenshot": "Pobierz zrzut ekranu",
+    "imageType": "Format obrazu",
+    "screenshot": "Zrzut ekranu",
+    "share": "Udostępnij",
+    "shareGPT": "Udostępnij GPT",
+    "shareToGPT": "Generuj link do udostępnienia ShareGPT",
+    "withBackground": "Zawiera tło",
+    "withFooter": "Zawiera stopkę",
+    "withSystemRole": "Zawiera ustawienia roli asystenta"
+  },
+  "stage": {
+    "stageList": "Lista scen",
+    "totalCount": "Łącznie {{total}} pozycji"
+  },
+  "token": {
+    "overload": "Token przekroczony",
+    "remained": "Pozostałe Tokeny",
+    "tokenCount": "Liczba Tokenów",
+    "useToken": "Obliczanie zużycia Tokenów, w tym wiadomości, ustawienia postaci i kontekstu: {{usedTokens}} / {{maxValue}}",
+    "used": "Tokeny użyte"
+  },
+  "toolBar": {
+    "axes": "Osie",
+    "cameraControl": "Kontrola kamery",
+    "cameraHelper": "Pomocnik kamery",
+    "downloading": "Pobieranie modelu, proszę czekać...",
+    "fullScreen": "Przełącz na pełny ekran",
+    "grid": "Siatka",
+    "interactiveOff": "Wyłącz interakcję dotykową",
+    "interactiveOn": "Włącz interakcję dotykową",
+    "resetCamera": "Zresetuj kamerę",
+    "resetToIdle": "Zatrzymaj ruch taneczny",
+    "screenShot": "Zrób zdjęcie"
+  },
+  "tts": {
+    "combine": "Syntezator mowy",
+    "record": "Rozpoznawanie mowy (wymaga dostępu do internetu przez VPN)"
+  },
+  "voiceOn": "Włącz głos"
+}

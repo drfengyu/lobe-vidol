@@ -1,0 +1,128 @@
+{
+  "ModelSelect": {
+    "featureTag": {
+      "custom": "Modelo personalizado, la configuración predeterminada admite tanto llamadas a funciones como reconocimiento visual. Verifique la disponibilidad de estas capacidades según su situación real.",
+      "file": "Este modelo admite la carga de archivos para lectura y reconocimiento.",
+      "functionCall": "Este modelo admite llamadas a funciones (Function Call).",
+      "tokens": "Este modelo admite un máximo de {{tokens}} tokens por sesión.",
+      "vision": "Este modelo admite reconocimiento visual."
+    },
+    "removed": "Este modelo no está en la lista, si se deselecciona, se eliminará automáticamente."
+  },
+  "actions": {
+    "add": "Añadir",
+    "copy": "Copiar",
+    "copySuccess": "Copia exitosa",
+    "del": "Eliminar",
+    "delAndRegenerate": "Eliminar y regenerar",
+    "edit": "Editar",
+    "goBottom": "Ir al final",
+    "regenerate": "Regenerar",
+    "save": "Guardar",
+    "share": "Compartir",
+    "tts": "Voz"
+  },
+  "agentInfo": "Información del rol",
+  "agentMarket": "Mercado de personajes",
+  "animation": {
+    "animationList": "Lista de acciones",
+    "postureList": "Lista de posturas",
+    "totalCount": "Total {{total}} elementos"
+  },
+  "apiKey": {
+    "addProxy": "Añadir dirección del proxy de OpenAI (opcional)",
+    "closeTip": "Cerrar aviso",
+    "confirmRetry": "Confirmar y reintentar",
+    "proxyDocs": "¿No estás seguro de cómo solicitar una clave API?",
+    "startDesc": "Introduce tu clave API de OpenAI para comenzar la conversación. La aplicación no registrará tu clave API.",
+    "startTitle": "Clave API personalizada"
+  },
+  "background": {
+    "backgroundList": "Lista de fondos",
+    "totalCount": "Total {{total}} elementos"
+  },
+  "callOff": "Colgar",
+  "camera": "Videollamada",
+  "chat": "charlar",
+  "chatList": "Lista de chat",
+  "clear": {
+    "action": "Borrar contexto",
+    "alert": "¿Estás seguro de que deseas eliminar los mensajes históricos?",
+    "tip": "Esta acción es irreversible, por favor actúa con precaución"
+  },
+  "danceList": "Lista de danzas",
+  "danceMarket": "Mercado de danzas",
+  "delSession": "Eliminar sesión",
+  "delSessionAlert": "¿Confirmas la eliminación de la conversación? Una vez eliminada, no se puede recuperar, ¡por favor actúa con precaución!",
+  "editRole": {
+    "action": "Editar rol"
+  },
+  "enableHistoryCount": {
+    "alias": "Sin límite",
+    "limited": "Solo incluye {{number}} mensajes de sesión",
+    "setlimited": "Usar número de mensajes históricos",
+    "title": "Limitar el número de mensajes históricos",
+    "unlimited": "Sin límite en el número de mensajes históricos"
+  },
+  "info": {
+    "background": "Fondo",
+    "chat": "charlar",
+    "dance": "bailar",
+    "motions": "movimientos",
+    "posture": "postura",
+    "stage": "escenario"
+  },
+  "input": {
+    "alert": "Ten en cuenta: todo lo que dice el agente es generado por IA",
+    "placeholder": "Introduce el contenido para comenzar a chatear",
+    "send": "Enviar",
+    "warp": "Saltar línea"
+  },
+  "interactive": "Interactivo",
+  "noDanceList": "No hay listas de reproducción disponibles. Puedes suscribirte a tus danzas favoritas a través del mercado.",
+  "noRoleList": "No hay lista de roles disponible",
+  "noSession": "No hay sesiones disponibles, puedes crear un rol personalizado a través de +, o agregar roles desde la página de descubrimiento.",
+  "selectModel": "Por favor, seleccione un modelo",
+  "sessionCreate": "Crear chat",
+  "sessionList": "Lista de sesiones",
+  "share": {
+    "downloadScreenshot": "Descargar captura de pantalla",
+    "imageType": "Formato de imagen",
+    "screenshot": "Captura de pantalla",
+    "share": "Compartir",
+    "shareGPT": "Compartir GPT",
+    "shareToGPT": "Generar enlace de compartición de ShareGPT",
+    "withBackground": "Incluir imagen de fondo",
+    "withFooter": "Incluir pie de página",
+    "withSystemRole": "Incluir configuración del asistente"
+  },
+  "stage": {
+    "stageList": "Lista de escenarios",
+    "totalCount": "Total {{total}} elementos"
+  },
+  "token": {
+    "overload": "Token excedido",
+    "remained": "Token restantes",
+    "tokenCount": "Cantidad de Token",
+    "useToken": "Cálculo de la cantidad de Token consumidos, incluyendo mensajes, configuración de personajes y contexto: {{usedTokens}} / {{maxValue}}",
+    "used": "Token utilizados"
+  },
+  "toolBar": {
+    "axes": "Ejes",
+    "cameraControl": "Control de cámara",
+    "cameraHelper": "Ayuda de cámara",
+    "downloading": "Descargando modelo, por favor espere...",
+    "fullScreen": "Alternar pantalla completa",
+    "grid": "Rejilla",
+    "interactiveOff": "Desactivar interacción táctil",
+    "interactiveOn": "Activar interacción táctil",
+    "resetCamera": "Restablecer cámara",
+    "resetToIdle": "Detener acción de baile",
+    "screenShot": "Tomar foto"
+  },
+  "tts": {
+    "combine": "Síntesis de voz",
+    "record": "Reconocimiento de voz (se requiere acceso a internet científico)"
+  },
+  "voiceOn": "Activar voz"
+}

@@ -1,0 +1,128 @@
+{
+  "ModelSelect": {
+    "featureTag": {
+      "custom": "自定义模型，默认设定同时支持函数调用与视觉识别，请根据实际情况验证上述能力的可用性",
+      "file": "该模型支持上传文件读取与识别",
+      "functionCall": "该模型支持函数调用（Function Call）",
+      "tokens": "该模型单个会话最多支持 {{tokens}} Tokens",
+      "vision": "该模型支持视觉识别"
+    },
+    "removed": "该模型不在列表中，若取消选中将会自动移除"
+  },
+  "actions": {
+    "copy": "复制",
+    "add": "添加",
+    "delAndRegenerate": "删除并重新生成",
+    "copySuccess": "复制成功",
+    "edit": "编辑",
+    "tts": "语音",
+    "del": "删除",
+    "save": "保存",
+    "share": "分享",
+    "goBottom": "返回底部",
+    "regenerate": "重新生成"
+  },
+  "agentInfo": "角色信息",
+  "agentMarket": "角色市场",
+  "animation": {
+    "animationList": "动作列表",
+    "postureList": "姿势列表",
+    "totalCount": "共 {{total}} 项"
+  },
+  "apiKey": {
+    "startDesc": "输入你的 OpenAI API Key 即可开始会话。",
+    "startTitle": "自定义 API Key",
+    "addProxy": "添加 OpenAI 代理地址（可选）",
+    "proxyDocs": "不清楚如何申请 API Key?",
+    "confirmRetry": "确认并重试",
+    "closeTip": "关闭提示"
+  },
+  "background": {
+    "backgroundList": "背景列表",
+    "totalCount": "共 {{total}} 项"
+  },
+  "callOff": "挂断",
+  "camera": "视频通话",
+  "chat": "聊天",
+  "chatList": "聊天列表",
+  "clear": {
+    "alert": "确定删除历史消息？",
+    "action": "清除上下文",
+    "tip": "该操作不可逆，请谨慎操作"
+  },
+  "danceList": "舞蹈列表",
+  "danceMarket": "舞蹈市场",
+  "delSession": "删除会话",
+  "delSessionAlert": "确认删除对话吗？删除后无法恢复, 请谨慎操作！",
+  "editRole": {
+    "action": "编辑角色"
+  },
+  "enableHistoryCount": {
+    "alias": "不限制",
+    "limited": "只包含 {{number}} 条会话消息",
+    "setlimited": "使用历史消息数",
+    "title": "限制历史消息数",
+    "unlimited": "不限历史消息数"
+  },
+  "info": {
+    "chat": "聊天",
+    "dance": "舞蹈",
+    "motions": "动作",
+    "posture": "姿势",
+    "background": "背景",
+    "stage": "舞台"
+  },
+  "input": {
+    "send": "发送",
+    "warp": "换行",
+    "placeholder": "请输入内容开始聊天",
+    "alert": "请谨记：智能体所说的一切都是由 AI 生成的"
+  },
+  "interactive": "可交互",
+  "noDanceList": "暂无播放列表，您可以通过市场订阅你喜欢的舞蹈",
+  "noRoleList": "暂无角色列表",
+  "noSession": "暂无会话, 可以通过 + 创建自定义角色, 也可通过发现页添加角色",
+  "selectModel": "请选择模型",
+  "sessionCreate": "创建聊天",
+  "sessionList": "会话列表",
+  "share": {
+    "screenshot": "截图",
+    "shareGPT": "分享GPT",
+    "withSystemRole": "包含助手角色设定",
+    "withBackground": "包含背景图片",
+    "withFooter": "包含页脚",
+    "imageType": "图片格式",
+    "downloadScreenshot": "下载截图",
+    "shareToGPT": "生成 ShareGPT 分享链接",
+    "share": "分享"
+  },
+  "stage": {
+    "stageList": "舞台列表",
+    "totalCount": "共 {{total}} 项"
+  },
+  "token": {
+    "overload": "Token 超出",
+    "remained": "Token 剩余",
+    "used": "Token 已使用",
+    "useToken": "消耗 Token 数量计算，包括消息，角色设定与上下文：{{usedTokens}} / {{maxValue}}",
+    "tokenCount": "Token 数量"
+  },
+  "toolBar": {
+    "cameraHelper": "镜头辅助",
+    "cameraControl": "镜头控制",
+    "fullScreen": "切换全屏",
+    "resetCamera": "重置镜头",
+    "resetToIdle": "停止舞蹈动作",
+    "interactiveOff": "关闭触摸交互",
+    "interactiveOn": "开启触摸交互",
+    "screenShot": "拍照",
+    "grid": "网格",
+    "axes": "坐标轴",
+    "downloading": "正在为你准备我的整个世界..."
+  },
+  "tts": {
+    "record": "语音识别（需科学上网）",
+    "combine": "语音合成"
+  },
+  "voiceOn": "开启语音"
+}

@@ -1,0 +1,82 @@
+{
+  "actions": {
+    "pause": "Pause",
+    "play": "Play"
+  },
+  "addPlay": "Add to List",
+  "addPlaySuccess": "Added to the playlist",
+  "cancelAddPlay": "Are you sure you want to cancel the subscription for the music {{musicName}}?",
+  "cancelSubscribed": "Cancel Subscription",
+  "confirmClearPlayList": "Are you sure you want to clear the playlist?",
+  "create": {
+    "audio": {
+      "desc": "The audio file for the dance",
+      "required": "Please upload an audio file",
+      "title": "Audio File",
+      "upload": "Select audio file"
+    },
+    "camera": {
+      "desc": "Select a camera file (.vmd)",
+      "required": "Please select a camera file",
+      "title": "Camera File",
+      "upload": "Choose Camera File"
+    },
+    "danceId": {
+      "desc": "The unique identifier for the dance",
+      "placeholder": "Please enter a unique identifier for the dance, such as vidol-dance-gokuraku",
+      "random": "Generate ID randomly",
+      "required": "Please enter the Dance ID",
+      "title": "Dance ID"
+    },
+    "image": {
+      "desc": "The cover image for the dance",
+      "required": "Please upload a cover image",
+      "title": "Cover Image",
+      "upload": "Select cover image"
+    },
+    "messages": {
+      "fileUploadError": "File upload error",
+      "uploadFailed": "Upload failed",
+      "uploadSuccess": "Upload successful"
+    },
+    "name": {
+      "desc": "The display name of the dance",
+      "required": "Please enter the Dance Name",
+      "title": "Dance Name"
+    },
+    "readme": {
+      "desc": "Documentation for the dance (optional)",
+      "placeholder": "Please enter a detailed description of the dance",
+      "title": "Documentation"
+    },
+    "src": {
+      "desc": "Select a dance file (.vmd)",
+      "required": "Please select a dance file",
+      "title": "Dance File",
+      "upload": "Choose Dance File"
+    },
+    "submit": "Submit",
+    "title": "Create Dance",
+    "upload": {
+      "audio": "Upload Music File",
+      "camera": "Upload Camera File",
+      "cover": "Upload Cover",
+      "dance": "Upload Dance File",
+      "loading": "Uploading, please do not close the page...",
+      "thumb": "Upload Thumbnail"
+    }
+  },
+  "createDance": "Create Your Favorite Dance",
+  "dance": "dance",
+  "danceList": "Dance List",
+  "danceManual": "Dance Manual",
+  "download": {
+    "audio": "Download Music",
+    "camera": "Download Camera Actions",
+    "src": "Download Dance Moves"
+  },
+  "findDance": "Find Your Favorite Dance",
+  "menu": "Menu",
+  "musicAndDance": "Dance Market",
+  "play": "Play"
+}

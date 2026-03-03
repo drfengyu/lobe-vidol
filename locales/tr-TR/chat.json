@@ -1,0 +1,128 @@
+{
+  "ModelSelect": {
+    "featureTag": {
+      "custom": "Özelleştirilmiş model, varsayılan ayarlarla hem fonksiyon çağrısını hem de görsel tanımayı destekler, yukarıdaki yeteneklerin kullanılabilirliğini gerçek duruma göre doğrulayın",
+      "file": "Bu model dosya yüklemeyi ve tanımayı destekler",
+      "functionCall": "Bu model fonksiyon çağrısını (Function Call) destekler",
+      "tokens": "Bu model tek bir oturumda en fazla {{tokens}} Token destekler",
+      "vision": "Bu model görsel tanımayı destekler"
+    },
+    "removed": "Bu model listede yok, eğer seçimden çıkarırsanız otomatik olarak kaldırılacaktır"
+  },
+  "actions": {
+    "add": "Ekle",
+    "copy": "Kopyala",
+    "copySuccess": "Başarıyla Kopyalandı",
+    "del": "Sil",
+    "delAndRegenerate": "Sil ve Yeniden Oluştur",
+    "edit": "Düzenle",
+    "goBottom": "Aşağı Git",
+    "regenerate": "Yeniden Oluştur",
+    "save": "Kaydet",
+    "share": "Paylaş",
+    "tts": "Sesli"
+  },
+  "agentInfo": "Rol Bilgisi",
+  "agentMarket": "Karakter Pazarı",
+  "animation": {
+    "animationList": "Animasyon Listesi",
+    "postureList": "Poz Listesi",
+    "totalCount": "Toplam {{total}} öğe"
+  },
+  "apiKey": {
+    "addProxy": "OpenAI proxy adresi ekleyin (isteğe bağlı)",
+    "closeTip": "İpucu'nu kapat",
+    "confirmRetry": "Onayla ve yeniden dene",
+    "proxyDocs": "API Anahtarı nasıl alınır?",
+    "startDesc": "OpenAI API Anahtarınızı girerek sohbete başlayabilirsiniz. Uygulama API Anahtarınızı kaydetmeyecek.",
+    "startTitle": "Özel API Anahtarı"
+  },
+  "background": {
+    "backgroundList": "Arka Plan Listesi",
+    "totalCount": "Toplam {{total}} Öğe"
+  },
+  "callOff": "Sonlandır",
+  "camera": "Görüntülü Arama",
+  "chat": "sohbet",
+  "chatList": "Sohbet Listesi",
+  "clear": {
+    "action": "Bağlamı temizle",
+    "alert": "Geçmiş mesajları silmek istediğinize emin misiniz?",
+    "tip": "Bu işlem geri alınamaz, lütfen dikkatli olun"
+  },
+  "danceList": "Dans Listesi",
+  "danceMarket": "Dans Pazarı",
+  "delSession": "Oturumu Sil",
+  "delSessionAlert": "Bu sohbeti silmek istediğinize emin misiniz? Silindikten sonra geri alınamaz, lütfen dikkatli olun!",
+  "editRole": {
+    "action": "Rolü Düzenle"
+  },
+  "enableHistoryCount": {
+    "alias": "Sınırsız",
+    "limited": "Sadece {{number}} oturum mesajını içerir",
+    "setlimited": "Geçmiş mesaj sayısını kullan",
+    "title": "Geçmiş mesaj sayısını sınırlama",
+    "unlimited": "Geçmiş mesaj sayısında sınırlama yok"
+  },
+  "info": {
+    "background": "Arka Plan",
+    "chat": "sohbet",
+    "dance": "dans",
+    "motions": "hareketler",
+    "posture": "duruş",
+    "stage": "Sahne"
+  },
+  "input": {
+    "alert": "Lütfen unutmayın: Akıllı varlığın söylediği her şey AI tarafından üretilmiştir",
+    "placeholder": "Lütfen sohbet etmeye başlamak için bir şeyler yazın",
+    "send": "Gönder",
+    "warp": "Satır Sonu"
+  },
+  "interactive": "Etkileşimli",
+  "noDanceList": "Henüz bir çalma listesi yok, sevdiğiniz dansları pazardan abone olabilirsiniz",
+  "noRoleList": "Rol Listesi Yok",
+  "noSession": "Henüz bir oturum yok, + ile özel bir rol oluşturabilir veya keşif sayfasından rol ekleyebilirsiniz.",
+  "selectModel": "Lütfen bir model seçin",
+  "sessionCreate": "Sohbet Oluştur",
+  "sessionList": "Oturum Listesi",
+  "share": {
+    "downloadScreenshot": "Ekran görüntüsünü indir",
+    "imageType": "Görüntü formatı",
+    "screenshot": "Ekran görüntüsü",
+    "share": "Paylaş",
+    "shareGPT": "GPT'yi paylaş",
+    "shareToGPT": "ShareGPT paylaşım bağlantısını oluştur",
+    "withBackground": "Arka plan resmi ile birlikte",
+    "withFooter": "Alt bilgi ile birlikte",
+    "withSystemRole": "Asistan rolü ile birlikte"
+  },
+  "stage": {
+    "stageList": "Sahne Listesi",
+    "totalCount": "Toplam {{total}} öğe"
+  },
+  "token": {
+    "overload": "Token aşımı",
+    "remained": "Kalan Token",
+    "tokenCount": "Token sayısı",
+    "useToken": "Token tüketim miktarı hesaplaması, mesajlar, karakter ayarları ve bağlam dahil: {{usedTokens}} / {{maxValue}}",
+    "used": "Kullanılan Token"
+  },
+  "toolBar": {
+    "axes": "Eksenler",
+    "cameraControl": "Kamera Kontrolü",
+    "cameraHelper": "Kamera Yardımcısı",
+    "downloading": "Model indiriliyor, lütfen bekleyin...",
+    "fullScreen": "Tam ekran moduna geç",
+    "grid": "Izgara",
+    "interactiveOff": "Dokunmatik etkileşimi kapat",
+    "interactiveOn": "Dokunmatik etkileşimi aç",
+    "resetCamera": "Kamerayı Sıfırla",
+    "resetToIdle": "Dans Hareketini Durdur",
+    "screenShot": "Ekran Görüntüsü Al"
+  },
+  "tts": {
+    "combine": "Ses Sentezi",
+    "record": "Ses Tanıma (bilimsel bir ağ bağlantısı gerektirir)"
+  },
+  "voiceOn": "Sesi Aç"
+}

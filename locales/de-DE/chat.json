@@ -1,0 +1,128 @@
+{
+  "ModelSelect": {
+    "featureTag": {
+      "custom": "Benutzerdefiniertes Modell, die Standardeinstellungen unterstützen sowohl Funktionsaufrufe als auch visuelle Erkennung. Bitte überprüfen Sie die Verfügbarkeit dieser Funktionen basierend auf den tatsächlichen Gegebenheiten.",
+      "file": "Dieses Modell unterstützt das Hochladen von Dateien zur Lesung und Erkennung.",
+      "functionCall": "Dieses Modell unterstützt Funktionsaufrufe (Function Call).",
+      "tokens": "Dieses Modell unterstützt maximal {{tokens}} Tokens pro Sitzung.",
+      "vision": "Dieses Modell unterstützt die visuelle Erkennung."
+    },
+    "removed": "Dieses Modell ist nicht in der Liste. Wenn Sie die Auswahl aufheben, wird es automatisch entfernt."
+  },
+  "actions": {
+    "add": "Hinzufügen",
+    "copy": "Kopieren",
+    "copySuccess": "Erfolgreich kopiert",
+    "del": "Löschen",
+    "delAndRegenerate": "Löschen und neu generieren",
+    "edit": "Bearbeiten",
+    "goBottom": "Zum Ende gehen",
+    "regenerate": "Neu generieren",
+    "save": "Speichern",
+    "share": "Teilen",
+    "tts": "Sprachausgabe"
+  },
+  "agentInfo": "Rolleninformationen",
+  "agentMarket": "Charaktermarkt",
+  "animation": {
+    "animationList": "Animationsliste",
+    "postureList": "Haltungsliste",
+    "totalCount": "Insgesamt {{total}} Elemente"
+  },
+  "apiKey": {
+    "addProxy": "Fügen Sie die OpenAI-Proxy-Adresse hinzu (optional)",
+    "closeTip": "Hinweis schließen",
+    "confirmRetry": "Bestätigen und erneut versuchen",
+    "proxyDocs": "Wie beantrage ich einen API-Schlüssel?",
+    "startDesc": "Geben Sie Ihren OpenAI API-Schlüssel ein, um das Gespräch zu beginnen. Die Anwendung wird Ihren API-Schlüssel nicht speichern.",
+    "startTitle": "Benutzerdefinierter API-Schlüssel"
+  },
+  "background": {
+    "backgroundList": "Hintergrundliste",
+    "totalCount": "Insgesamt {{total}} Elemente"
+  },
+  "callOff": "Anruf beenden",
+  "camera": "Videoanruf",
+  "chat": "Chat",
+  "chatList": "Chatliste",
+  "clear": {
+    "action": "Kontext löschen",
+    "alert": "Möchten Sie die Verlaufsmeldungen wirklich löschen?",
+    "tip": "Diese Aktion ist irreversibel, bitte vorsichtig sein"
+  },
+  "danceList": "Tanzliste",
+  "danceMarket": "Tanzmarkt",
+  "delSession": "Sitzung löschen",
+  "delSessionAlert": "Möchten Sie den Chat wirklich löschen? Nach dem Löschen kann er nicht wiederhergestellt werden, bitte seien Sie vorsichtig!",
+  "editRole": {
+    "action": "Rolle bearbeiten"
+  },
+  "enableHistoryCount": {
+    "alias": "Keine Einschränkung",
+    "limited": "Enthält nur {{number}} Sitzungsnachrichten",
+    "setlimited": "Verwendete Anzahl der Verlaufsmeldungen",
+    "title": "Einschränkung der Anzahl der Verlaufsmeldungen",
+    "unlimited": "Keine Einschränkung der Verlaufsmeldungen"
+  },
+  "info": {
+    "background": "Hintergrund",
+    "chat": "Chat",
+    "dance": "Tanz",
+    "motions": "Bewegungen",
+    "posture": "Haltung",
+    "stage": "Bühne"
+  },
+  "input": {
+    "alert": "Bitte beachten Sie: Alles, was der Agent sagt, wird von KI generiert",
+    "placeholder": "Bitte geben Sie Ihren Inhalt ein, um zu chatten",
+    "send": "Senden",
+    "warp": "Umbruch"
+  },
+  "interactive": "interaktiv",
+  "noDanceList": "Derzeit keine Wiedergabeliste verfügbar. Sie können im Markt die Tänze abonnieren, die Ihnen gefallen.",
+  "noRoleList": "Keine Rollenliste vorhanden",
+  "noSession": "Keine Sitzungen verfügbar. Sie können durch + eine benutzerdefinierte Rolle erstellen oder Rollen über die Entdeckungsseite hinzufügen.",
+  "selectModel": "Bitte wählen Sie ein Modell aus",
+  "sessionCreate": "Chat erstellen",
+  "sessionList": "Sitzungsliste",
+  "share": {
+    "downloadScreenshot": "Screenshot herunterladen",
+    "imageType": "Bildformat",
+    "screenshot": "Screenshot",
+    "share": "Teilen",
+    "shareGPT": "ShareGPT teilen",
+    "shareToGPT": "ShareGPT-Link generieren",
+    "withBackground": "Mit Hintergrundbild",
+    "withFooter": "Mit Fußzeile",
+    "withSystemRole": "Mit Assistentenrollen-Einstellungen"
+  },
+  "stage": {
+    "stageList": "Bühnenliste",
+    "totalCount": "Insgesamt {{total}} Einträge"
+  },
+  "token": {
+    "overload": "Token überlastet",
+    "remained": "Verbleibende Token",
+    "tokenCount": "Anzahl der Token",
+    "useToken": "Berechnung der verbrauchten Token-Anzahl, einschließlich Nachrichten, Rolleneinstellungen und Kontext: {{usedTokens}} / {{maxValue}}",
+    "used": "Verwendete Token"
+  },
+  "toolBar": {
+    "axes": "Achsen",
+    "cameraControl": "Kamerasteuerung",
+    "cameraHelper": "Kamerahilfe",
+    "downloading": "Modell wird heruntergeladen, bitte warten...",
+    "fullScreen": "Vollbild umschalten",
+    "grid": "Raster",
+    "interactiveOff": "Berührungseingabe deaktivieren",
+    "interactiveOn": "Berührungseingabe aktivieren",
+    "resetCamera": "Kamera zurücksetzen",
+    "resetToIdle": "Tanzbewegungen stoppen",
+    "screenShot": "Foto aufnehmen"
+  },
+  "tts": {
+    "combine": "Sprachsynthese",
+    "record": "Spracherkennung (benötigt wissenschaftliches Surfen)"
+  },
+  "voiceOn": "Sprachausgabe aktivieren"
+}

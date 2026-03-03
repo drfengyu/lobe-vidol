@@ -1,0 +1,128 @@
+{
+  "ModelSelect": {
+    "featureTag": {
+      "custom": "Aangepast model, de standaardinstelling ondersteunt zowel functieaanroepen als visuele herkenning. Gelieve de beschikbaarheid van bovenstaande mogelijkheden te verifiëren op basis van de werkelijke situatie.",
+      "file": "Dit model ondersteunt het uploaden van bestanden voor lezen en herkenning.",
+      "functionCall": "Dit model ondersteunt functieaanroepen (Function Call).",
+      "tokens": "Dit model ondersteunt maximaal {{tokens}} tokens per sessie.",
+      "vision": "Dit model ondersteunt visuele herkenning."
+    },
+    "removed": "Dit model staat niet op de lijst. Als u het deselecteert, wordt het automatisch verwijderd."
+  },
+  "actions": {
+    "add": "Toevoegen",
+    "copy": "Kopiëren",
+    "copySuccess": "Kopiëren geslaagd",
+    "del": "Verwijderen",
+    "delAndRegenerate": "Verwijderen en opnieuw genereren",
+    "edit": "Bewerken",
+    "goBottom": "Ga naar onderaan",
+    "regenerate": "Opnieuw genereren",
+    "save": "Opslaan",
+    "share": "Delen",
+    "tts": "Spraak"
+  },
+  "agentInfo": "Rol informatie",
+  "agentMarket": "Rolmarkt",
+  "animation": {
+    "animationList": "Actielijst",
+    "postureList": "Houdingenlijst",
+    "totalCount": "Totaal {{total}} items"
+  },
+  "apiKey": {
+    "addProxy": "Voeg een OpenAI proxyadres toe (optioneel)",
+    "closeTip": "Sluit de tip",
+    "confirmRetry": "Bevestigen en opnieuw proberen",
+    "proxyDocs": "Weet je niet hoe je een API-sleutel kunt aanvragen?",
+    "startDesc": "Voer je OpenAI API-sleutel in om de sessie te starten. De applicatie zal je API-sleutel niet opslaan.",
+    "startTitle": "Aangepaste API-sleutel"
+  },
+  "background": {
+    "backgroundList": "Achtergrondlijst",
+    "totalCount": "Totaal {{total}} items"
+  },
+  "callOff": "Ophangen",
+  "camera": "Videobellen",
+  "chat": "Chatten",
+  "chatList": "Chatlijst",
+  "clear": {
+    "action": "Context wissen",
+    "alert": "Weet je zeker dat je de historische berichten wilt verwijderen?",
+    "tip": "Deze actie is onomkeerbaar, wees voorzichtig"
+  },
+  "danceList": "Danslijst",
+  "danceMarket": "Dansmarkt",
+  "delSession": "Verwijder sessie",
+  "delSessionAlert": "Weet je zeker dat je de conversatie wilt verwijderen? Na verwijdering kan deze niet worden hersteld, wees voorzichtig!",
+  "editRole": {
+    "action": "Rol bewerken"
+  },
+  "enableHistoryCount": {
+    "alias": "Geen beperking",
+    "limited": "Bevat alleen {{number}} gespreksberichten",
+    "setlimited": "Gebruik het aantal historische berichten",
+    "title": "Beperk het aantal historische berichten",
+    "unlimited": "Geen beperking op het aantal historische berichten"
+  },
+  "info": {
+    "background": "Achtergrond",
+    "chat": "Chatten",
+    "dance": "Dansen",
+    "motions": "Bewegingen",
+    "posture": "Houding",
+    "stage": "Podium"
+  },
+  "input": {
+    "alert": "Let op: alles wat de AI zegt, is gegenereerd door AI",
+    "placeholder": "Voer inhoud in om te beginnen met chatten",
+    "send": "Verzenden",
+    "warp": "Nieuwe regel"
+  },
+  "interactive": "Interactief",
+  "noDanceList": "Geen afspeellijst beschikbaar. U kunt zich abonneren op uw favoriete dansen via de markt.",
+  "noRoleList": "Geen rol lijst beschikbaar",
+  "noSession": "Geen sessie beschikbaar, je kunt een aangepaste rol maken via + of een rol toevoegen via de ontdekkingpagina",
+  "selectModel": "Selecteer een model",
+  "sessionCreate": "Chat aanmaken",
+  "sessionList": "Sessielijst",
+  "share": {
+    "downloadScreenshot": "Screenshot downloaden",
+    "imageType": "Afbeeldingsformaat",
+    "screenshot": "Screenshot",
+    "share": "Delen",
+    "shareGPT": "Deel GPT",
+    "shareToGPT": "Genereer ShareGPT deel-link",
+    "withBackground": "Inclusief achtergrondafbeelding",
+    "withFooter": "Inclusief voettekst",
+    "withSystemRole": "Inclusief assistentrolinstellingen"
+  },
+  "stage": {
+    "stageList": "Lijst van podia",
+    "totalCount": "Totaal {{total}} items"
+  },
+  "token": {
+    "overload": "Token overschrijding",
+    "remained": "Overgebleven Token",
+    "tokenCount": "Aantal Token",
+    "useToken": "Berekening van het aantal verbruikte Token, inclusief berichten, rolinstellingen en context: {{usedTokens}} / {{maxValue}}",
+    "used": "Gebruikte Token"
+  },
+  "toolBar": {
+    "axes": "Coördinatenassen",
+    "cameraControl": "Camera-besturing",
+    "cameraHelper": "Camera-hulp",
+    "downloading": "Model wordt gedownload, even geduld...",
+    "fullScreen": "Schakel naar volledig scherm",
+    "grid": "Raster",
+    "interactiveOff": "Schakel aanraking interactie uit",
+    "interactiveOn": "Schakel aanraking interactie in",
+    "resetCamera": "Camera resetten",
+    "resetToIdle": "Stop dansbeweging",
+    "screenShot": "Screenshot maken"
+  },
+  "tts": {
+    "combine": "Spraaksynthese",
+    "record": "Spraakherkenning (vereist een wetenschappelijke internetverbinding)"
+  },
+  "voiceOn": "Spraak inschakelen"
+}

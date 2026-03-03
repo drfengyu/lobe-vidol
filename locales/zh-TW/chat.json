@@ -1,0 +1,128 @@
+{
+  "ModelSelect": {
+    "featureTag": {
+      "custom": "自訂模型，預設設定同時支持函數調用與視覺識別，請根據實際情況驗證上述能力的可用性",
+      "file": "該模型支持上傳文件讀取與識別",
+      "functionCall": "該模型支持函數調用（Function Call）",
+      "tokens": "該模型單個會話最多支持 {{tokens}} Tokens",
+      "vision": "該模型支持視覺識別"
+    },
+    "removed": "該模型不在列表中，若取消選中將會自動移除"
+  },
+  "actions": {
+    "add": "新增",
+    "copy": "複製",
+    "copySuccess": "複製成功",
+    "del": "刪除",
+    "delAndRegenerate": "刪除並重新生成",
+    "edit": "編輯",
+    "goBottom": "返回底部",
+    "regenerate": "重新生成",
+    "save": "儲存",
+    "share": "分享",
+    "tts": "語音"
+  },
+  "agentInfo": "角色資訊",
+  "agentMarket": "角色市場",
+  "animation": {
+    "animationList": "動作列表",
+    "postureList": "姿勢列表",
+    "totalCount": "共 {{total}} 項"
+  },
+  "apiKey": {
+    "addProxy": "添加 OpenAI 代理地址（可選）",
+    "closeTip": "關閉提示",
+    "confirmRetry": "確認並重試",
+    "proxyDocs": "不清楚如何申請 API Key?",
+    "startDesc": "輸入你的 OpenAI API Key 即可開始會話。應用不會記錄你的 API Key",
+    "startTitle": "自訂 API Key"
+  },
+  "background": {
+    "backgroundList": "背景列表",
+    "totalCount": "共 {{total}} 項"
+  },
+  "callOff": "掛斷",
+  "camera": "視頻通話",
+  "chat": "聊天",
+  "chatList": "聊天列表",
+  "clear": {
+    "action": "清除上下文",
+    "alert": "確定刪除歷史消息？",
+    "tip": "該操作不可逆，請謹慎操作"
+  },
+  "danceList": "舞蹈列表",
+  "danceMarket": "舞蹈市場",
+  "delSession": "刪除會話",
+  "delSessionAlert": "確認刪除對話嗎？刪除後無法恢復，請謹慎操作！",
+  "editRole": {
+    "action": "編輯角色"
+  },
+  "enableHistoryCount": {
+    "alias": "不限制",
+    "limited": "只包含 {{number}} 條會話消息",
+    "setlimited": "使用歷史消息數",
+    "title": "限制歷史消息數",
+    "unlimited": "不限歷史消息數"
+  },
+  "info": {
+    "background": "背景",
+    "chat": "聊天",
+    "dance": "舞蹈",
+    "motions": "動作",
+    "posture": "姿勢",
+    "stage": "舞台"
+  },
+  "input": {
+    "alert": "請謹記：智能體所說的一切都是由 AI 生成的",
+    "placeholder": "請輸入內容開始聊天",
+    "send": "發送",
+    "warp": "換行"
+  },
+  "interactive": "可互動",
+  "noDanceList": "暫無播放列表，您可以透過市場訂閱您喜歡的舞蹈",
+  "noRoleList": "目前沒有角色列表",
+  "noSession": "暫無會話，可以通過 + 創建自定義角色，也可通過發現頁添加角色",
+  "selectModel": "請選擇模型",
+  "sessionCreate": "建立聊天",
+  "sessionList": "會話列表",
+  "share": {
+    "downloadScreenshot": "下載截圖",
+    "imageType": "圖片格式",
+    "screenshot": "截圖",
+    "share": "分享",
+    "shareGPT": "分享GPT",
+    "shareToGPT": "生成 ShareGPT 分享連結",
+    "withBackground": "包含背景圖片",
+    "withFooter": "包含頁腳",
+    "withSystemRole": "包含助手角色設定"
+  },
+  "stage": {
+    "stageList": "舞台列表",
+    "totalCount": "共 {{total}} 項"
+  },
+  "token": {
+    "overload": "Token 超出",
+    "remained": "Token 剩餘",
+    "tokenCount": "Token 數量",
+    "useToken": "消耗 Token 數量計算，包括消息、角色設定與上下文：{{usedTokens}} / {{maxValue}}",
+    "used": "Token 已使用"
+  },
+  "toolBar": {
+    "axes": "坐標軸",
+    "cameraControl": "鏡頭控制",
+    "cameraHelper": "鏡頭輔助",
+    "downloading": "模型下載中，請稍候...",
+    "fullScreen": "切換全螢幕",
+    "grid": "網格",
+    "interactiveOff": "關閉觸控互動",
+    "interactiveOn": "開啟觸控互動",
+    "resetCamera": "重置鏡頭",
+    "resetToIdle": "停止舞蹈動作",
+    "screenShot": "拍照"
+  },
+  "tts": {
+    "combine": "語音合成",
+    "record": "語音識別（需科學上網）"
+  },
+  "voiceOn": "開啟語音"
+}

@@ -1,0 +1,82 @@
+{
+  "actions": {
+    "pause": "Pauza",
+    "play": "Odtwórz"
+  },
+  "addPlay": "Dodaj do listy",
+  "addPlaySuccess": "Dodano do listy odtwarzania",
+  "cancelAddPlay": "Czy na pewno chcesz anulować subskrypcję muzyki {{musicName}}?",
+  "cancelSubscribed": "Anuluj subskrypcję",
+  "confirmClearPlayList": "Czy na pewno chcesz wyczyścić listę odtwarzania?",
+  "create": {
+    "audio": {
+      "desc": "Plik audio tańca",
+      "required": "Proszę przesłać plik audio",
+      "title": "Plik audio",
+      "upload": "Wybierz plik audio"
+    },
+    "camera": {
+      "desc": "Wybierz plik kamery (.vmd)",
+      "required": "Proszę wybrać plik kamery",
+      "title": "Plik kamery",
+      "upload": "Wybierz plik kamery"
+    },
+    "danceId": {
+      "desc": "Unikalny identyfikator tańca",
+      "placeholder": "Wprowadź identyfikator tańca, musi być unikalny, na przykład vidol-dance-gokuraku",
+      "random": "Losowo wygeneruj ID",
+      "required": "Proszę wprowadzić ID tańca",
+      "title": "ID tańca"
+    },
+    "image": {
+      "desc": "Obrazek okładki tańca",
+      "required": "Proszę przesłać obrazek okładki",
+      "title": "Obrazek okładki",
+      "upload": "Wybierz obrazek okładki"
+    },
+    "messages": {
+      "fileUploadError": "Błąd przesyłania pliku",
+      "uploadFailed": "Przesyłanie nie powiodło się",
+      "uploadSuccess": "Przesyłanie zakończone sukcesem"
+    },
+    "name": {
+      "desc": "Nazwa wyświetlana tańca",
+      "required": "Proszę wprowadzić nazwę tańca",
+      "title": "Nazwa tańca"
+    },
+    "readme": {
+      "desc": "Dokumentacja tańca (opcjonalnie)",
+      "placeholder": "Wprowadź szczegółowy opis tańca",
+      "title": "Dokumentacja"
+    },
+    "src": {
+      "desc": "Wybierz plik tańca (.vmd)",
+      "required": "Proszę wybrać plik tańca",
+      "title": "Plik tańca",
+      "upload": "Wybierz plik tańca"
+    },
+    "submit": "Prześlij",
+    "title": "Stwórz taniec",
+    "upload": {
+      "audio": "Prześlij plik muzyczny",
+      "camera": "Prześlij plik kamery",
+      "cover": "Prześlij okładkę",
+      "dance": "Prześlij plik taneczny",
+      "loading": "Trwa przesyłanie, proszę nie zamykać strony...",
+      "thumb": "Prześlij miniaturę"
+    }
+  },
+  "createDance": "Stwórz swój ulubiony taniec",
+  "dance": "tańczyć",
+  "danceList": "Lista tańców",
+  "danceManual": "Podręcznik tańca",
+  "download": {
+    "audio": "Pobierz muzykę",
+    "camera": "Pobierz ruchy kamery",
+    "src": "Pobierz ruchy taneczne"
+  },
+  "findDance": "Znajdź swój ulubiony taniec",
+  "menu": "Menu",
+  "musicAndDance": "Rynek tańca",
+  "play": "Odtwarzaj"
+}

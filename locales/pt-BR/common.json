@@ -1,0 +1,69 @@
+{
+  "cancel": "Cancelar",
+  "close": "Fechar",
+  "community": "Suporte da Comunidade",
+  "confirm": "Confirmar",
+  "confirmDel": "Você tem certeza de que deseja excluir?",
+  "defaultAssistant": "Assistente Padrão",
+  "delete": "Excluir",
+  "download": {
+    "audio": "Baixar Áudio",
+    "avatar": "Baixar avatar",
+    "camera": "Baixar Câmera",
+    "cover": "Baixar capa",
+    "dance": "Baixar Dança",
+    "failed": "Falha no download",
+    "model": "Baixar modelo",
+    "subscribe": "Baixar assinatura",
+    "success": "Download bem-sucedido"
+  },
+  "header": {
+    "chat": "Bate-papo",
+    "discover": "Descobrir",
+    "role": "Função",
+    "settings": "Configurações",
+    "tips": "O projeto está atualmente em construção, não garantimos a estabilidade dos dados. Se você encontrar problemas, pode limpar as mensagens de sessão e redefinir as configurações do sistema nas configurações. Pedimos desculpas pelo inconveniente."
+  },
+  "installPWA": "Instalar Aplicativo Progressivo (PWA)",
+  "loading": "Carregando...",
+  "menu": {
+    "discord": "Suporte da Comunidade",
+    "github": "Github",
+    "support": "Apoiar o Autor"
+  },
+  "noData": "Nenhum dado disponível",
+  "play": "Reproduzir",
+  "random": "Aleatório",
+  "search": "Pesquisar",
+  "sideBar": "Barra Lateral",
+  "submit": "Enviar",
+  "subscribe": {
+    "success": "Inscrição cancelada com sucesso",
+    "undo": "Cancelar inscrição"
+  },
+  "support": "Suporte da Comunidade",
+  "theme": {
+    "auto": "Seguir o sistema",
+    "dark": "Modo escuro",
+    "light": "Modo claro"
+  },
+  "uploadTip": "Clique ou arraste arquivos para esta área para fazer o upload",
+  "userPanel": {
+    "anonymousNickName": "Usuário Anônimo",
+    "billing": "Gerenciamento de Faturas",
+    "cloud": "Experimente {{name}}",
+    "data": "Armazenamento de Dados",
+    "defaultNickname": "Usuário da Versão Comunitária",
+    "discord": "Suporte da Comunidade",
+    "docs": "Documentação de Uso",
+    "email": "Suporte por E-mail",
+    "feedback": "Feedback e Sugestões",
+    "help": "Central de Ajuda",
+    "moveGuide": "O botão de configuração foi movido para cá",
+    "plans": "Planos de Assinatura",
+    "preview": "Versão de Pré-visualização",
+    "profile": "Gerenciamento de Conta",
+    "setting": "Configurações do Aplicativo",
+    "usages": "Estatísticas de Uso"
+  }
+}

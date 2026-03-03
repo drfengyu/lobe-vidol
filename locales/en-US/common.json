@@ -1,0 +1,69 @@
+{
+  "cancel": "Cancel",
+  "close": "Close",
+  "community": "Community Support",
+  "confirm": "Confirm",
+  "confirmDel": "Are you sure you want to delete?",
+  "defaultAssistant": "Default Assistant",
+  "delete": "Delete",
+  "download": {
+    "audio": "Download Audio",
+    "avatar": "Download Avatar",
+    "camera": "Download Camera",
+    "cover": "Download Cover",
+    "dance": "Download Dance",
+    "failed": "Download Failed",
+    "model": "Download Model",
+    "subscribe": "Download Subscription",
+    "success": "Download Successful"
+  },
+  "header": {
+    "chat": "Chat",
+    "discover": "Discover",
+    "role": "Role",
+    "settings": "Settings",
+    "tips": "The project is currently under construction, and data stability is not guaranteed. If you encounter any issues, you can clear session messages and reset system settings in the system settings. We apologize for any inconvenience this may cause."
+  },
+  "installPWA": "Install Progressive Web App (PWA)",
+  "loading": "Loading...",
+  "menu": {
+    "discord": "Community Support",
+    "github": "Github",
+    "support": "Support the Author"
+  },
+  "noData": "No data available",
+  "play": "Play",
+  "random": "Random",
+  "search": "Search",
+  "sideBar": "Sidebar",
+  "submit": "Submit",
+  "subscribe": {
+    "success": "Successfully unsubscribed",
+    "undo": "Unsubscribe"
+  },
+  "support": "Community Support",
+  "theme": {
+    "auto": "Follow System",
+    "dark": "Dark Mode",
+    "light": "Light Mode"
+  },
+  "uploadTip": "Click or drag files to this area to upload",
+  "userPanel": {
+    "anonymousNickName": "Anonymous User",
+    "billing": "Billing Management",
+    "cloud": "Experience {{name}}",
+    "data": "Data Storage",
+    "defaultNickname": "Community Edition User",
+    "discord": "Community Support",
+    "docs": "User Documentation",
+    "email": "Email Support",
+    "feedback": "Feedback and Suggestions",
+    "help": "Help Center",
+    "moveGuide": "The settings button has moved here",
+    "plans": "Subscription Plans",
+    "preview": "Preview Version",
+    "profile": "Account Management",
+    "setting": "App Settings",
+    "usages": "Usage Statistics"
+  }
+}

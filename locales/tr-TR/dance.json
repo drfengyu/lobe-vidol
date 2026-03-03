@@ -1,0 +1,82 @@
+{
+  "actions": {
+    "pause": "Duraklat",
+    "play": "Oynat"
+  },
+  "addPlay": "Listeye Ekle",
+  "addPlaySuccess": "Oynatma listesine eklendi",
+  "cancelAddPlay": "{{musicName}} müziğini aboneliğinizi iptal etmek istediğinize emin misiniz?",
+  "cancelSubscribed": "Aboneliği İptal Et",
+  "confirmClearPlayList": "Çalma listesini temizlemek istediğinize emin misiniz?",
+  "create": {
+    "audio": {
+      "desc": "Dansın ses dosyası",
+      "required": "Lütfen ses dosyası yükleyin",
+      "title": "Ses Dosyası",
+      "upload": "Ses dosyasını seçin"
+    },
+    "camera": {
+      "desc": "Kamera dosyasını seçin (.vmd)",
+      "required": "Lütfen bir kamera dosyası seçin",
+      "title": "Kamera Dosyası",
+      "upload": "Kamera dosyasını seçin"
+    },
+    "danceId": {
+      "desc": "Dansın benzersiz tanımlayıcısı",
+      "placeholder": "Lütfen dansın tanımlayıcısını girin, benzersiz olmalıdır, örneğin vidol-dance-gokuraku",
+      "random": "Rastgele ID oluştur",
+      "required": "Lütfen dans ID'sini girin",
+      "title": "Dans ID"
+    },
+    "image": {
+      "desc": "Dansın kapak resmi",
+      "required": "Lütfen kapak resmi yükleyin",
+      "title": "Kapak Resmi",
+      "upload": "Kapak resmini seçin"
+    },
+    "messages": {
+      "fileUploadError": "Dosya yükleme hatası",
+      "uploadFailed": "Yükleme başarısız",
+      "uploadSuccess": "Yükleme başarılı"
+    },
+    "name": {
+      "desc": "Dansın görüntüleme adı",
+      "required": "Lütfen dans adını girin",
+      "title": "Dans Adı"
+    },
+    "readme": {
+      "desc": "Dansın açıklama belgesi (isteğe bağlı)",
+      "placeholder": "Lütfen dansın ayrıntılı açıklamasını girin",
+      "title": "Açıklama Belgesi"
+    },
+    "src": {
+      "desc": "Dans dosyasını seçin (.vmd)",
+      "required": "Lütfen bir dans dosyası seçin",
+      "title": "Dans Dosyası",
+      "upload": "Dans dosyasını seçin"
+    },
+    "submit": "Gönder",
+    "title": "Dans Oluştur",
+    "upload": {
+      "audio": "Müzik Dosyası Yükle",
+      "camera": "Kamera Dosyası Yükle",
+      "cover": "Kapak Yükle",
+      "dance": "Dans Dosyası Yükle",
+      "loading": "Yükleniyor, lütfen sayfayı kapatmayın...",
+      "thumb": "Küçük Resim Yükle"
+    }
+  },
+  "createDance": "En sevdiğin dansı oluştur",
+  "dance": "dans",
+  "danceList": "Dans Listesi",
+  "danceManual": "Dans Kılavuzu",
+  "download": {
+    "audio": "Müzik İndir",
+    "camera": "Kamera Hareketlerini İndir",
+    "src": "Dans Hareketlerini İndir"
+  },
+  "findDance": "En sevdiğin dansı bul",
+  "menu": "Menü",
+  "musicAndDance": "Dans Pazarı",
+  "play": "Oynat"
+}

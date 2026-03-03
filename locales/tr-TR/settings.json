@@ -1,0 +1,175 @@
+{
+  "common": {
+    "chat": {
+      "avatar": {
+        "desc": "Özel profil resmi",
+        "title": "Profil Resmi"
+      },
+      "nickName": {
+        "desc": "Özel takma ad",
+        "placeholder": "Lütfen takma adınızı girin",
+        "title": "Takma Ad"
+      },
+      "title": "Sohbet Ayarları"
+    },
+    "system": {
+      "clear": {
+        "action": "Hemen Temizle",
+        "alert": "Tüm sohbet mesajlarını temizlemek istediğinize emin misiniz?",
+        "desc": "Tüm sohbet ve karakter verilerini, sohbet listesini, karakter listesini, sohbet mesajlarını vb. temizleyecektir.",
+        "success": "Başarıyla temizlendi",
+        "tip": "İşlem geri alınamaz, temizledikten sonra veriler geri getirilemez, lütfen dikkatli olun.",
+        "title": "Tüm Sohbet Mesajlarını Temizle"
+      },
+      "clearCache": {
+        "action": "Hemen temizle",
+        "alert": "Tüm önbelleği temizlemek istediğinize emin misiniz?",
+        "calculating": "Önbellek boyutu hesaplanıyor...",
+        "desc": "Uygulama tarafından indirilen veri önbelleğini temizleyecektir, bu, karakter model verileri, ses verileri, dans model verileri, ses dosyaları vb. dahil olmak üzere",
+        "success": "Temizleme başarılı",
+        "tip": "İşlem geri alınamaz, temizledikten sonra verilerin yeniden indirilmesi gerekecektir, lütfen dikkatli olun",
+        "title": "Veri önbelleğini temizle"
+      },
+      "reset": {
+        "action": "Hemen Sıfırla",
+        "alert": "Tüm sistem ayarlarını sıfırlamak istediğinize emin misiniz?",
+        "desc": "Tüm sistem ayarlarını, tema ayarlarını, sohbet ayarlarını, dil modeli ayarlarını vb. sıfırlayacaktır.",
+        "success": "Başarıyla sıfırlandı",
+        "tip": "İşlem geri alınamaz, sıfırladıktan sonra veriler geri getirilemez, lütfen dikkatli olun.",
+        "title": "Sistem Ayarlarını Sıfırla"
+      },
+      "title": "Sistem Ayarları"
+    },
+    "theme": {
+      "backgroundEffect": {
+        "desc": "Arka plan efektini özelleştir",
+        "glow": "Parıltı",
+        "none": "Arka plan yok",
+        "title": "Arka Plan Efekti"
+      },
+      "locale": {
+        "auto": "Sistemi takip et",
+        "desc": "Sistem dilini özelleştir",
+        "title": "Dil"
+      },
+      "neutralColor": {
+        "desc": "Farklı renk eğilimlerine göre gri tonlarını özelleştir",
+        "title": "Nötr Renk"
+      },
+      "primaryColor": {
+        "desc": "Tema rengini özelleştir",
+        "title": "Tema Rengi"
+      },
+      "title": "Tema Ayarları"
+    },
+    "title": "Genel Ayarlar"
+  },
+  "header": {
+    "desc": "Tercihler ve Model Ayarları",
+    "global": "Küresel Ayarlar",
+    "session": "Oturum Ayarları",
+    "sessionDesc": "Rol Ayarları ve Oturum Tercihleri",
+    "sessionWithName": "Oturum Ayarları · {{name}}",
+    "title": "Ayarlar"
+  },
+  "llm": {
+    "aesGcm": "Anahtarınız ve proxy adresi gibi bilgiler <1>AES-GCM</1> şifreleme algoritması ile şifrelenecektir.",
+    "apiKey": {
+      "desc": "Lütfen {{name}} API Anahtarınızı girin",
+      "placeholder": "{{name}} API Anahtarı",
+      "title": "API Anahtarı"
+    },
+    "checker": {
+      "button": "Kontrol Et",
+      "desc": "API Anahtarının ve proxy adresinin doğru girilip girilmediğini test edin",
+      "error": "Kontrol Başarısız",
+      "pass": "Kontrol başarılı",
+      "title": "Bağlantı Kontrolü"
+    },
+    "customModelCards": {
+      "addNew": "{{id}} modelini oluştur ve ekle",
+      "config": "Modeli yapılandır",
+      "confirmDelete": "Bu özel modeli silmek üzeresiniz, silindikten sonra geri alınamaz, lütfen dikkatli olun.",
+      "modelConfig": {
+        "azureDeployName": {
+          "extra": "Azure OpenAI'de gerçek istek için kullanılan alan",
+          "placeholder": "Lütfen Azure'daki model dağıtım adını girin",
+          "title": "Model Dağıtım Adı"
+        },
+        "displayName": {
+          "placeholder": "Lütfen modelin gösterim adını girin, örneğin ChatGPT, GPT-4 vb.",
+          "title": "Model Gösterim Adı"
+        },
+        "files": {
+          "extra": "Mevcut dosya yükleme uygulaması yalnızca bir Hack çözümüdür, yalnızca kendi denemeniz için geçerlidir. Tam dosya yükleme yeteneği için lütfen sonraki uygulamayı bekleyin.",
+          "title": "Dosya Yüklemeyi Destekle"
+        },
+        "functionCall": {
+          "extra": "Bu yapılandırma yalnızca uygulamadaki fonksiyon çağırma yeteneğini açacaktır, fonksiyon çağırma desteği tamamen modele bağlıdır, lütfen bu modelin fonksiyon çağırma yeteneğini kendiniz test edin.",
+          "title": "Fonksiyon Çağırmayı Destekle"
+        },
+        "id": {
+          "extra": "Model etiketi olarak gösterilecektir",
+          "placeholder": "Lütfen model id'sini girin, örneğin gpt-4-turbo-preview veya claude-2.1",
+          "title": "Model ID"
+        },
+        "modalTitle": "Özel Model Yapılandırması",
+        "tokens": {
+          "title": "Maksimum token sayısı",
+          "unlimited": "Sınırsız"
+        },
+        "vision": {
+          "extra": "Bu yapılandırma yalnızca uygulamadaki resim yükleme yapılandırmasını açacaktır, tanıma desteği tamamen modele bağlıdır, lütfen bu modelin görsel tanıma yeteneğini kendiniz test edin.",
+          "title": "Görsel Tanımayı Destekle"
+        }
+      }
+    },
+    "fetchOnClient": {
+      "desc": "İstemci talep modu, oturum taleplerini doğrudan tarayıcıdan başlatır ve yanıt hızını artırabilir",
+      "title": "İstemci talep modunu kullan"
+    },
+    "fetcher": {
+      "fetch": "Model listesini al",
+      "fetching": "Model listesi alınıyor...",
+      "latestTime": "Son güncelleme zamanı: {{time}}",
+      "noLatestTime": "Henüz liste alınmadı"
+    },
+    "helpDoc": "Yapılandırma kılavuzu",
+    "modelList": {
+      "desc": "Oturumda gösterilecek modeli seçin, seçilen model model listesinde gösterilecektir",
+      "placeholder": "Lütfen listeden bir model seçin",
+      "title": "Model listesi",
+      "total": "Toplam {{count}} model mevcut"
+    },
+    "proxyUrl": {
+      "desc": "Varsayılan adres dışında, http(s):// içermelidir",
+      "title": "API proxy adresi"
+    },
+    "title": "Dil Modeli",
+    "waitingForMore": "Daha fazla model <1>planlanıyor</1>, lütfen bekleyin"
+  },
+  "systemAgent": {
+    "customPrompt": {
+      "addPrompt": "Özel İpucu Ekle",
+      "desc": "Doldurduğunuzda, sistem asistanı içerik oluştururken özel ipucunu kullanacaktır",
+      "placeholder": "Lütfen özel ipucu kelimelerini girin",
+      "title": "Özel İpucu Kelimeleri"
+    },
+    "emotionAnalysis": {
+      "label": "Duygu Analizi Modeli",
+      "modelDesc": "Duygu analizi için kullanılacak modeli belirtin",
+      "title": "Otomatik Duygu Analizi Yap"
+    },
+    "title": "Sistem Ajanı"
+  },
+  "touch": {
+    "title": "Dokunma Ayarları"
+  },
+  "tts": {
+    "clientCall": {
+      "desc": "Etkinleştirildiğinde, istemci ses sentez hizmetini çağıracak, ses sentez hızı daha hızlı olacak, ancak bilimsel bir şekilde internete erişim veya dış ağa erişim yeteneği gerektirir.",
+      "title": "İstemci Çağrısı"
+    },
+    "title": "Ses Ayarları"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "actions": {
+    "pause": "暫停",
+    "play": "播放"
+  },
+  "addPlay": "加入清單",
+  "addPlaySuccess": "已添加至播放清單",
+  "cancelAddPlay": "確定取消訂閱音樂{{musicName}}嗎？",
+  "cancelSubscribed": "取消訂閱",
+  "confirmClearPlayList": "您確定要清空播放列表嗎？",
+  "create": {
+    "audio": {
+      "desc": "舞蹈的音頻文件",
+      "required": "請上傳音頻文件",
+      "title": "音頻文件",
+      "upload": "選擇音頻文件"
+    },
+    "camera": {
+      "desc": "选择镜头文件（当前仅支持 VMD 格式）",
+      "required": "请选择镜头文件",
+      "title": "镜头文件",
+      "upload": "选择镜头文件"
+    },
+    "danceId": {
+      "desc": "舞蹈的唯一標識符",
+      "placeholder": "請輸入舞蹈的標識符，需要是唯一的，比如 vidol-dance-gokuraku",
+      "random": "隨機生成ID",
+      "required": "請輸入舞蹈ID",
+      "title": "舞蹈ID"
+    },
+    "image": {
+      "desc": "舞蹈的封面圖片",
+      "required": "請上傳封面圖片",
+      "title": "封面圖片",
+      "upload": "選擇封面圖片"
+    },
+    "messages": {
+      "fileUploadError": "文件上傳錯誤",
+      "uploadFailed": "上傳失敗",
+      "uploadSuccess": "上傳成功"
+    },
+    "name": {
+      "desc": "舞蹈的顯示名稱",
+      "required": "請輸入舞蹈名稱",
+      "title": "舞蹈名稱"
+    },
+    "readme": {
+      "desc": "舞蹈的說明文檔（可選）",
+      "placeholder": "請輸入舞蹈的詳細說明",
+      "title": "說明文檔"
+    },
+    "src": {
+      "desc": "舞蹈的動作文件",
+      "required": "請上傳舞蹈文件",
+      "title": "舞蹈文件",
+      "upload": "選擇舞蹈文件"
+    },
+    "submit": "提交",
+    "title": "創建舞蹈",
+    "upload": {
+      "audio": "上傳音樂檔案",
+      "camera": "上傳鏡頭檔案",
+      "cover": "上傳封面",
+      "dance": "上傳舞蹈檔案",
+      "loading": "上傳處理中，請勿關閉頁面...",
+      "thumb": "上傳縮略圖"
+    }
+  },
+  "createDance": "創建你最愛的舞蹈",
+  "dance": "跳舞",
+  "danceList": "舞蹈清單",
+  "danceManual": "舞蹈手冊",
+  "download": {
+    "audio": "下載音樂",
+    "camera": "下載鏡頭動作",
+    "src": "下載舞蹈動作"
+  },
+  "findDance": "找到你最喜愛的舞蹈",
+  "menu": "選單",
+  "musicAndDance": "舞蹈市場",
+  "play": "播放"
+}

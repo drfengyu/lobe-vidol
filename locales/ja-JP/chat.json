@@ -1,0 +1,128 @@
+{
+  "ModelSelect": {
+    "featureTag": {
+      "custom": "カスタムモデル。デフォルト設定では関数呼び出しと視覚認識の両方をサポートしています。実際の状況に応じて、上記の機能の利用可能性を確認してください。",
+      "file": "このモデルはファイルのアップロード、読み取り、認識をサポートしています。",
+      "functionCall": "このモデルは関数呼び出し（Function Call）をサポートしています。",
+      "tokens": "このモデルは1セッションあたり最大{{tokens}}トークンをサポートしています。",
+      "vision": "このモデルは視覚認識をサポートしています。"
+    },
+    "removed": "このモデルはリストにありません。チェックを外すと自動的に削除されます。"
+  },
+  "actions": {
+    "add": "追加",
+    "copy": "コピー",
+    "copySuccess": "コピー成功",
+    "del": "削除",
+    "delAndRegenerate": "削除して再生成",
+    "edit": "編集",
+    "goBottom": "最下部に移動",
+    "regenerate": "再生成",
+    "save": "保存",
+    "share": "共有",
+    "tts": "音声"
+  },
+  "agentInfo": "ロール情報",
+  "agentMarket": "キャラクターマーケット",
+  "animation": {
+    "animationList": "アニメーションリスト",
+    "postureList": "ポーズリスト",
+    "totalCount": "合計 {{total}} 件"
+  },
+  "apiKey": {
+    "addProxy": "OpenAI プロキシアドレスを追加（オプション）",
+    "closeTip": "ヒントを閉じる",
+    "confirmRetry": "確認して再試行",
+    "proxyDocs": "APIキーの申請方法がわかりませんか？",
+    "startDesc": "あなたの OpenAI API キーを入力して会話を開始してください。アプリはあなたの API キーを記録しません。",
+    "startTitle": "カスタム API キー"
+  },
+  "background": {
+    "backgroundList": "背景リスト",
+    "totalCount": "合計 {{total}} 件"
+  },
+  "callOff": "通話を終了する",
+  "camera": "ビデオ通話",
+  "chat": "チャット",
+  "chatList": "チャットリスト",
+  "clear": {
+    "action": "コンテキストをクリア",
+    "alert": "履歴メッセージを削除してもよろしいですか？",
+    "tip": "この操作は元に戻せませんので、慎重に行ってください"
+  },
+  "danceList": "ダンスリスト",
+  "danceMarket": "ダンスマーケット",
+  "delSession": "セッションを削除",
+  "delSessionAlert": "会話を削除してもよろしいですか？削除後は復元できませんので、慎重に操作してください！",
+  "editRole": {
+    "action": "ロールを編集"
+  },
+  "enableHistoryCount": {
+    "alias": "制限なし",
+    "limited": "{{number}} 件のセッションメッセージのみを含む",
+    "setlimited": "履歴メッセージ数を使用",
+    "title": "履歴メッセージ数を制限",
+    "unlimited": "履歴メッセージ数に制限なし"
+  },
+  "info": {
+    "background": "背景",
+    "chat": "チャット",
+    "dance": "ダンス",
+    "motions": "動作",
+    "posture": "姿勢",
+    "stage": "ステージ"
+  },
+  "input": {
+    "alert": "ご注意ください：エージェントが言うことはすべてAIによって生成されています",
+    "placeholder": "内容を入力してチャットを開始してください",
+    "send": "送信",
+    "warp": "改行"
+  },
+  "interactive": "インタラクティブ",
+  "noDanceList": "現在再生リストはありません。お気に入りのダンスをマーケットで購読できます。",
+  "noRoleList": "ロールリストはありません",
+  "noSession": "現在セッションはありません。+ を使ってカスタムキャラクターを作成するか、発見ページからキャラクターを追加できます。",
+  "selectModel": "モデルを選択してください",
+  "sessionCreate": "チャットを作成",
+  "sessionList": "セッションリスト",
+  "share": {
+    "downloadScreenshot": "スクリーンショットをダウンロード",
+    "imageType": "画像形式",
+    "screenshot": "スクリーンショット",
+    "share": "共有",
+    "shareGPT": "ShareGPTを共有",
+    "shareToGPT": "ShareGPT共有リンクを生成",
+    "withBackground": "背景画像を含む",
+    "withFooter": "フッターを含む",
+    "withSystemRole": "アシスタントの役割設定を含む"
+  },
+  "stage": {
+    "stageList": "ステージリスト",
+    "totalCount": "合計 {{total}} 件"
+  },
+  "token": {
+    "overload": "トークンが超過しました",
+    "remained": "残りのトークン",
+    "tokenCount": "トークンの数",
+    "useToken": "トークン消費量の計算（メッセージ、キャラクター設定、コンテキストを含む）：{{usedTokens}} / {{maxValue}}",
+    "used": "使用済みトークン"
+  },
+  "toolBar": {
+    "axes": "座標軸",
+    "cameraControl": "カメラコントロール",
+    "cameraHelper": "カメラヘルパー",
+    "downloading": "モデルをダウンロード中です。しばらくお待ちください...",
+    "fullScreen": "全画面表示に切り替え",
+    "grid": "グリッド",
+    "interactiveOff": "タッチインタラクションを無効にする",
+    "interactiveOn": "タッチインタラクションを有効にする",
+    "resetCamera": "カメラリセット",
+    "resetToIdle": "ダンス動作を停止",
+    "screenShot": "スクリーンショット"
+  },
+  "tts": {
+    "combine": "音声合成",
+    "record": "音声認識（科学的なインターネット接続が必要）"
+  },
+  "voiceOn": "音声をオンにする"
+}

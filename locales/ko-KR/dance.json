@@ -1,0 +1,82 @@
+{
+  "actions": {
+    "pause": "일시 정지",
+    "play": "재생"
+  },
+  "addPlay": "목록에 추가",
+  "addPlaySuccess": "재생 목록에 추가되었습니다.",
+  "cancelAddPlay": "{{musicName}} 음악 구독을 정말 취소하시겠습니까?",
+  "cancelSubscribed": "구독 취소",
+  "confirmClearPlayList": "재생 목록을 지우시겠습니까?",
+  "create": {
+    "audio": {
+      "desc": "춤의 오디오 파일",
+      "required": "오디오 파일을 업로드하세요",
+      "title": "오디오 파일",
+      "upload": "오디오 파일 선택"
+    },
+    "camera": {
+      "desc": "카메라 파일(.vmd) 선택",
+      "required": "카메라 파일을 선택해 주세요",
+      "title": "카메라 파일",
+      "upload": "카메라 파일 선택"
+    },
+    "danceId": {
+      "desc": "춤의 고유 식별자",
+      "placeholder": "고유한 춤 식별자를 입력하세요. 예: vidol-dance-gokuraku",
+      "random": "ID 무작위 생성",
+      "required": "춤 ID를 입력하세요",
+      "title": "춤 ID"
+    },
+    "image": {
+      "desc": "춤의 표지 이미지",
+      "required": "표지 이미지를 업로드하세요",
+      "title": "표지 이미지",
+      "upload": "커버 이미지 선택"
+    },
+    "messages": {
+      "fileUploadError": "파일 업로드 오류",
+      "uploadFailed": "업로드 실패",
+      "uploadSuccess": "업로드 성공"
+    },
+    "name": {
+      "desc": "춤의 표시 이름",
+      "required": "춤 이름을 입력하세요",
+      "title": "춤 이름"
+    },
+    "readme": {
+      "desc": "춤의 설명 문서(선택 사항)",
+      "placeholder": "춤에 대한 자세한 설명을 입력하세요",
+      "title": "설명 문서"
+    },
+    "src": {
+      "desc": "댄스 파일(.vmd) 선택",
+      "required": "댄스 파일을 선택해 주세요",
+      "title": "댄스 파일",
+      "upload": "댄스 파일 선택"
+    },
+    "submit": "제출",
+    "title": "춤 만들기",
+    "upload": {
+      "audio": "음악 파일 업로드",
+      "camera": "카메라 파일 업로드",
+      "cover": "커버 업로드",
+      "dance": "댄스 파일 업로드",
+      "loading": "업로드 중입니다. 페이지를 닫지 마세요...",
+      "thumb": "썸네일 업로드"
+    }
+  },
+  "createDance": "가장 좋아하는 춤을 만들기",
+  "dance": "춤추기",
+  "danceList": "댄스 목록",
+  "danceManual": "댄스 매뉴얼",
+  "download": {
+    "audio": "음악 다운로드",
+    "camera": "카메라 동작 다운로드",
+    "src": "댄스 동작 다운로드"
+  },
+  "findDance": "가장 좋아하는 춤을 찾아보세요",
+  "menu": "메뉴",
+  "musicAndDance": "무용 시장",
+  "play": "재생"
+}

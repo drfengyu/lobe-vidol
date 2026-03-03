@@ -1,0 +1,82 @@
+{
+  "actions": {
+    "pause": "Tạm dừng",
+    "play": "Phát"
+  },
+  "addPlay": "Thêm vào danh sách",
+  "addPlaySuccess": "Đã thêm vào danh sách phát",
+  "cancelAddPlay": "Bạn có chắc chắn muốn hủy đăng ký nhạc {{musicName}} không?",
+  "cancelSubscribed": "Hủy đăng ký",
+  "confirmClearPlayList": "Bạn có chắc chắn muốn xóa danh sách phát?",
+  "create": {
+    "audio": {
+      "desc": "Tập tin âm thanh cho điệu nhảy",
+      "required": "Vui lòng tải lên tập tin âm thanh",
+      "title": "Tập tin âm thanh",
+      "upload": "Chọn tệp âm thanh"
+    },
+    "camera": {
+      "desc": "Chọn tệp camera (.vmd)",
+      "required": "Vui lòng chọn tệp camera",
+      "title": "Tệp camera",
+      "upload": "Chọn tệp camera"
+    },
+    "danceId": {
+      "desc": "Định danh duy nhất cho điệu nhảy",
+      "placeholder": "Vui lòng nhập định danh của điệu nhảy, cần phải là duy nhất, ví dụ vidol-dance-gokuraku",
+      "random": "Tạo ID ngẫu nhiên",
+      "required": "Vui lòng nhập ID điệu nhảy",
+      "title": "ID điệu nhảy"
+    },
+    "image": {
+      "desc": "Hình ảnh bìa cho điệu nhảy",
+      "required": "Vui lòng tải lên hình ảnh bìa",
+      "title": "Hình ảnh bìa",
+      "upload": "Chọn hình ảnh bìa"
+    },
+    "messages": {
+      "fileUploadError": "Lỗi tải lên tập tin",
+      "uploadFailed": "Tải lên thất bại",
+      "uploadSuccess": "Tải lên thành công"
+    },
+    "name": {
+      "desc": "Tên hiển thị cho điệu nhảy",
+      "required": "Vui lòng nhập tên điệu nhảy",
+      "title": "Tên điệu nhảy"
+    },
+    "readme": {
+      "desc": "Tài liệu hướng dẫn cho điệu nhảy (tùy chọn)",
+      "placeholder": "Vui lòng nhập mô tả chi tiết về điệu nhảy",
+      "title": "Tài liệu hướng dẫn"
+    },
+    "src": {
+      "desc": "Chọn tệp nhảy múa (.vmd)",
+      "required": "Vui lòng chọn tệp nhảy múa",
+      "title": "Tệp nhảy múa",
+      "upload": "Chọn tệp nhảy múa"
+    },
+    "submit": "Gửi",
+    "title": "Tạo điệu nhảy",
+    "upload": {
+      "audio": "Tải lên tệp nhạc",
+      "camera": "Tải lên tệp camera",
+      "cover": "Tải lên bìa",
+      "dance": "Tải lên tệp nhảy",
+      "loading": "Đang tải lên, vui lòng không đóng trang...",
+      "thumb": "Tải lên hình thu nhỏ"
+    }
+  },
+  "createDance": "Tạo điệu nhảy yêu thích của bạn",
+  "dance": "Khiêu vũ",
+  "danceList": "Danh sách vũ điệu",
+  "danceManual": "Sổ tay khiêu vũ",
+  "download": {
+    "audio": "Tải nhạc",
+    "camera": "Tải động tác camera",
+    "src": "Tải động tác nhảy"
+  },
+  "findDance": "Tìm điệu nhảy yêu thích của bạn",
+  "menu": "Thực đơn",
+  "musicAndDance": "Thị trường khiêu vũ",
+  "play": "Phát"
+}

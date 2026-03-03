@@ -1,0 +1,69 @@
+{
+  "cancel": "取消",
+  "close": "關閉",
+  "community": "社區支持",
+  "confirm": "確定",
+  "confirmDel": "確定要刪除嗎？",
+  "defaultAssistant": "預設助手",
+  "delete": "刪除",
+  "download": {
+    "audio": "下載音頻",
+    "avatar": "下載頭像",
+    "camera": "下載鏡頭",
+    "cover": "下載封面",
+    "dance": "下載動作",
+    "failed": "下載失敗",
+    "model": "下載模型",
+    "subscribe": "下載訂閱",
+    "success": "下載成功"
+  },
+  "header": {
+    "chat": "聊天",
+    "discover": "發現",
+    "role": "角色",
+    "settings": "設定",
+    "tips": "專案目前正在施工中，不保證數據穩定性，如果遇到問題可以在系統設定中清除會話消息與重置系統設定，造成不便敬請見諒"
+  },
+  "installPWA": "安裝漸進式應用(PWA)",
+  "loading": "載入中...",
+  "menu": {
+    "discord": "社群支援",
+    "github": "Github",
+    "support": "支持作者"
+  },
+  "noData": "目前沒有資料",
+  "play": "播放",
+  "random": "隨機",
+  "search": "搜尋",
+  "sideBar": "側邊欄",
+  "submit": "提交",
+  "subscribe": {
+    "success": "已取消訂閱",
+    "undo": "取消訂閱"
+  },
+  "support": "社區支持",
+  "theme": {
+    "auto": "跟隨系統",
+    "dark": "暗黑模式",
+    "light": "亮色模式"
+  },
+  "uploadTip": "點擊或拖曳檔案到此區域上傳",
+  "userPanel": {
+    "anonymousNickName": "匿名使用者",
+    "billing": "帳單管理",
+    "cloud": "體驗 {{name}}",
+    "data": "資料儲存",
+    "defaultNickname": "社群版使用者",
+    "discord": "社群支援",
+    "docs": "使用文件",
+    "email": "郵件支援",
+    "feedback": "回饋與建議",
+    "help": "幫助中心",
+    "moveGuide": "設定按鈕搬到這裡啦",
+    "plans": "訂閱方案",
+    "preview": "預覽版",
+    "profile": "帳戶管理",
+    "setting": "應用設定",
+    "usages": "用量統計"
+  }
+}

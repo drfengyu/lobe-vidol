@@ -1,0 +1,82 @@
+{
+  "actions": {
+    "pause": "Pause",
+    "play": "Jouer"
+  },
+  "addPlay": "Ajouter à la liste",
+  "addPlaySuccess": "Ajouté à la liste de lecture",
+  "cancelAddPlay": "Êtes-vous sûr de vouloir annuler l'abonnement à la musique {{musicName}} ?",
+  "cancelSubscribed": "Annuler l'abonnement",
+  "confirmClearPlayList": "Êtes-vous sûr de vouloir vider la liste de lecture ?",
+  "create": {
+    "audio": {
+      "desc": "Fichier audio de la danse",
+      "required": "Veuillez télécharger un fichier audio",
+      "title": "Fichier audio",
+      "upload": "Choisir un fichier audio"
+    },
+    "camera": {
+      "desc": "Sélectionnez le fichier de caméra (.vmd)",
+      "required": "Veuillez sélectionner un fichier de caméra",
+      "title": "Fichier de caméra",
+      "upload": "Choisir le fichier de caméra"
+    },
+    "danceId": {
+      "desc": "Identifiant unique de la danse",
+      "placeholder": "Veuillez entrer l'identifiant de la danse, qui doit être unique, par exemple vidol-dance-gokuraku",
+      "random": "Générer un ID aléatoire",
+      "required": "Veuillez entrer l'ID de la danse",
+      "title": "ID de la danse"
+    },
+    "image": {
+      "desc": "Image de couverture de la danse",
+      "required": "Veuillez télécharger une image de couverture",
+      "title": "Image de couverture",
+      "upload": "Choisir une image de couverture"
+    },
+    "messages": {
+      "fileUploadError": "Erreur de téléchargement de fichier",
+      "uploadFailed": "Échec du téléchargement",
+      "uploadSuccess": "Téléchargement réussi"
+    },
+    "name": {
+      "desc": "Nom affiché de la danse",
+      "required": "Veuillez entrer le nom de la danse",
+      "title": "Nom de la danse"
+    },
+    "readme": {
+      "desc": "Document d'instructions pour la danse (optionnel)",
+      "placeholder": "Veuillez entrer une description détaillée de la danse",
+      "title": "Document d'instructions"
+    },
+    "src": {
+      "desc": "Sélectionnez le fichier de danse (.vmd)",
+      "required": "Veuillez sélectionner un fichier de danse",
+      "title": "Fichier de danse",
+      "upload": "Choisir le fichier de danse"
+    },
+    "submit": "Soumettre",
+    "title": "Créer une danse",
+    "upload": {
+      "audio": "Télécharger le fichier audio",
+      "camera": "Télécharger le fichier de caméra",
+      "cover": "Télécharger la couverture",
+      "dance": "Télécharger le fichier de danse",
+      "loading": "Téléchargement en cours, veuillez ne pas fermer la page...",
+      "thumb": "Télécharger la miniature"
+    }
+  },
+  "createDance": "Créez votre danse préférée",
+  "dance": "danser",
+  "danceList": "Liste de danses",
+  "danceManual": "Manuel de danse",
+  "download": {
+    "audio": "Télécharger de la musique",
+    "camera": "Télécharger des mouvements de caméra",
+    "src": "Télécharger des mouvements de danse"
+  },
+  "findDance": "Trouvez votre danse préférée",
+  "menu": "Menu",
+  "musicAndDance": "Marché de la danse",
+  "play": "Jouer"
+}

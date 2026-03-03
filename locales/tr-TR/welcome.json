@@ -1,0 +1,17 @@
+{
+  "agent": {
+    "hello": "Merhaba",
+    "meta": {
+      "description": "Bu bir özelleştirilmiş roldür",
+      "name": "Özelleştirilmiş Rol"
+    }
+  },
+  "greet": "Merhaba, ben {{name}}. Size nasıl yardımcı olabilirim?",
+  "loading": {
+    "model": "Model yükleniyor...",
+    "motions": "Hareket dosyaları önceden yükleniyor...",
+    "voices": "Ses dosyaları oluşturuluyor...",
+    "waiting": "Dünyamı senin için hazırlıyorum..."
+  },
+  "loadingTitle": "Uygulama başlatılıyor, lütfen bekleyin..."
+}

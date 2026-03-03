@@ -1,0 +1,17 @@
+{
+  "agent": {
+    "hello": "Ciao!",
+    "meta": {
+      "description": "Questo è un ruolo personalizzato",
+      "name": "Ruolo personalizzato"
+    }
+  },
+  "greet": "Ciao, sono {{name}}, come posso aiutarti?",
+  "loading": {
+    "model": "Caricamento del modello in corso...",
+    "motions": "Caricamento dei file di animazione...",
+    "voices": "Generazione dei file audio in corso...",
+    "waiting": "Stiamo preparando il mio intero mondo per te..."
+  },
+  "loadingTitle": "Inizializzazione dell'applicazione, attendere prego..."
+}

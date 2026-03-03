@@ -1,0 +1,17 @@
+{
+  "agent": {
+    "hello": "Hallo daar",
+    "meta": {
+      "description": "Dit is een aangepaste rol",
+      "name": "Aangepast rol"
+    }
+  },
+  "greet": "Hallo, ik ben {{name}}, hoe kan ik je helpen?",
+  "loading": {
+    "model": "Model aan het laden...",
+    "motions": "Actiebestanden aan het voorladen...",
+    "voices": "Stembestanden aan het genereren...",
+    "waiting": "We zijn bezig met het voorbereiden van mijn hele wereld..."
+  },
+  "loadingTitle": "Applicatie wordt geïnitialiseerd, even geduld..."
+}

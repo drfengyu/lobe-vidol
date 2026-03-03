@@ -1,0 +1,175 @@
+{
+  "common": {
+    "chat": {
+      "avatar": {
+        "desc": "Tùy chỉnh ảnh đại diện",
+        "title": "Ảnh đại diện"
+      },
+      "nickName": {
+        "desc": "Tùy chỉnh biệt danh",
+        "placeholder": "Vui lòng nhập biệt danh",
+        "title": "Biệt danh"
+      },
+      "title": "Cài đặt trò chuyện"
+    },
+    "system": {
+      "clear": {
+        "action": "Xóa ngay",
+        "alert": "Xác nhận xóa tất cả tin nhắn cuộc trò chuyện?",
+        "desc": "Sẽ xóa tất cả dữ liệu cuộc trò chuyện và nhân vật, bao gồm danh sách cuộc trò chuyện, danh sách nhân vật, tin nhắn cuộc trò chuyện, v.v.",
+        "success": "Xóa thành công",
+        "tip": "Hành động không thể hoàn tác, sau khi xóa dữ liệu sẽ không thể khôi phục, vui lòng cẩn thận khi thực hiện",
+        "title": "Xóa tất cả tin nhắn cuộc trò chuyện"
+      },
+      "clearCache": {
+        "action": "Xóa ngay",
+        "alert": "Xác nhận xóa tất cả bộ nhớ cache?",
+        "calculating": "Đang tính kích thước bộ nhớ cache...",
+        "desc": "Sẽ xóa bộ nhớ cache dữ liệu tải về của ứng dụng, bao gồm dữ liệu mô hình nhân vật, dữ liệu giọng nói, dữ liệu mô hình vũ đạo, dữ liệu âm thanh, v.v.",
+        "success": "Xóa thành công",
+        "tip": "Hành động này không thể hoàn tác, sau khi xóa dữ liệu sẽ cần tải về lại, xin hãy cẩn thận khi thực hiện",
+        "title": "Xóa bộ nhớ cache dữ liệu"
+      },
+      "reset": {
+        "action": "Đặt lại ngay",
+        "alert": "Xác nhận đặt lại tất cả cài đặt hệ thống?",
+        "desc": "Sẽ đặt lại tất cả cài đặt hệ thống, bao gồm cài đặt chủ đề, cài đặt trò chuyện, cài đặt mô hình ngôn ngữ, v.v.",
+        "success": "Đặt lại thành công",
+        "tip": "Hành động không thể hoàn tác, sau khi đặt lại dữ liệu sẽ không thể khôi phục, vui lòng cẩn thận khi thực hiện",
+        "title": "Đặt lại cài đặt hệ thống"
+      },
+      "title": "Cài đặt hệ thống"
+    },
+    "theme": {
+      "backgroundEffect": {
+        "desc": "Tùy chỉnh hiệu ứng nền",
+        "glow": "Phát sáng",
+        "none": "Không có nền",
+        "title": "Hiệu ứng nền"
+      },
+      "locale": {
+        "auto": "Theo hệ thống",
+        "desc": "Tùy chỉnh ngôn ngữ hệ thống",
+        "title": "Ngôn ngữ"
+      },
+      "neutralColor": {
+        "desc": "Tùy chỉnh sắc thái xám theo các xu hướng màu sắc khác nhau",
+        "title": "Màu trung tính"
+      },
+      "primaryColor": {
+        "desc": "Tùy chỉnh màu chủ đề",
+        "title": "Màu chủ đề"
+      },
+      "title": "Cài đặt chủ đề"
+    },
+    "title": "Cài đặt chung"
+  },
+  "header": {
+    "desc": "Cài đặt sở thích và mô hình",
+    "global": "Cài đặt toàn cầu",
+    "session": "Cài đặt phiên",
+    "sessionDesc": "Thiết lập vai trò và sở thích phiên",
+    "sessionWithName": "Cài đặt phiên · {{name}}",
+    "title": "Cài đặt"
+  },
+  "llm": {
+    "aesGcm": "Khóa của bạn và địa chỉ proxy sẽ được mã hóa bằng thuật toán <1>AES-GCM</1>",
+    "apiKey": {
+      "desc": "Vui lòng điền {{name}} API Key của bạn",
+      "placeholder": "{{name}} API Key",
+      "title": "API Key"
+    },
+    "checker": {
+      "button": "Kiểm tra",
+      "desc": "Kiểm tra xem Api Key và địa chỉ proxy đã được điền đúng chưa",
+      "error": "Kiểm tra không thành công",
+      "pass": "Kiểm tra thành công",
+      "title": "Kiểm tra kết nối"
+    },
+    "customModelCards": {
+      "addNew": "Tạo và thêm mô hình {{id}}",
+      "config": "Cấu hình mô hình",
+      "confirmDelete": "Bạn sắp xóa mô hình tùy chỉnh này, sau khi xóa sẽ không thể khôi phục, xin hãy cẩn thận.",
+      "modelConfig": {
+        "azureDeployName": {
+          "extra": "Trường thực tế được yêu cầu trong Azure OpenAI",
+          "placeholder": "Vui lòng nhập tên triển khai mô hình trong Azure",
+          "title": "Tên triển khai mô hình"
+        },
+        "displayName": {
+          "placeholder": "Vui lòng nhập tên hiển thị của mô hình, ví dụ ChatGPT, GPT-4, v.v.",
+          "title": "Tên hiển thị mô hình"
+        },
+        "files": {
+          "extra": "Chức năng tải lên tệp hiện tại chỉ là một giải pháp Hack, chỉ dành cho thử nghiệm cá nhân. Vui lòng chờ đợi khả năng tải lên tệp hoàn chỉnh trong các bản cập nhật sau.",
+          "title": "Hỗ trợ tải lên tệp"
+        },
+        "functionCall": {
+          "extra": "Cấu hình này chỉ mở khả năng gọi hàm trong ứng dụng, việc hỗ trợ gọi hàm hoàn toàn phụ thuộc vào mô hình, vui lòng tự kiểm tra khả năng gọi hàm của mô hình này.",
+          "title": "Hỗ trợ gọi hàm"
+        },
+        "id": {
+          "extra": "Sẽ được hiển thị dưới dạng nhãn mô hình",
+          "placeholder": "Vui lòng nhập id mô hình, ví dụ gpt-4-turbo-preview hoặc claude-2.1",
+          "title": "ID mô hình"
+        },
+        "modalTitle": "Cấu hình mô hình tùy chỉnh",
+        "tokens": {
+          "title": "Số lượng token tối đa",
+          "unlimited": "Không giới hạn"
+        },
+        "vision": {
+          "extra": "Cấu hình này chỉ mở khả năng tải lên hình ảnh trong ứng dụng, việc hỗ trợ nhận diện hoàn toàn phụ thuộc vào mô hình, vui lòng tự kiểm tra khả năng nhận diện hình ảnh của mô hình này.",
+          "title": "Hỗ trợ nhận diện hình ảnh"
+        }
+      }
+    },
+    "fetchOnClient": {
+      "desc": "Chế độ yêu cầu từ khách hàng sẽ gửi yêu cầu phiên trực tiếp từ trình duyệt, có thể cải thiện tốc độ phản hồi",
+      "title": "Sử dụng chế độ yêu cầu từ khách hàng"
+    },
+    "fetcher": {
+      "fetch": "Lấy danh sách mô hình",
+      "fetching": "Đang lấy danh sách mô hình...",
+      "latestTime": "Thời gian cập nhật lần cuối: {{time}}",
+      "noLatestTime": "Chưa lấy được danh sách"
+    },
+    "helpDoc": "Hướng dẫn cấu hình",
+    "modelList": {
+      "desc": "Chọn mô hình sẽ hiển thị trong phiên, mô hình đã chọn sẽ được hiển thị trong danh sách mô hình",
+      "placeholder": "Vui lòng chọn mô hình từ danh sách",
+      "title": "Danh sách mô hình",
+      "total": "Tổng cộng có {{count}} mô hình khả dụng"
+    },
+    "proxyUrl": {
+      "desc": "Ngoài địa chỉ mặc định, phải bao gồm http(s)://",
+      "title": "Địa chỉ proxy API"
+    },
+    "title": "Mô hình ngôn ngữ",
+    "waitingForMore": "Nhiều mô hình hơn đang <1>được lên kế hoạch kết nối</1>, xin hãy chờ đợi"
+  },
+  "systemAgent": {
+    "customPrompt": {
+      "addPrompt": "Thêm gợi ý tùy chỉnh",
+      "desc": "Sau khi điền, trợ lý hệ thống sẽ sử dụng gợi ý tùy chỉnh khi tạo nội dung",
+      "placeholder": "Vui lòng nhập từ gợi ý tùy chỉnh",
+      "title": "Từ gợi ý tùy chỉnh"
+    },
+    "emotionAnalysis": {
+      "label": "Mô hình phân tích cảm xúc",
+      "modelDesc": "Chỉ định mô hình được sử dụng cho phân tích cảm xúc",
+      "title": "Tự động thực hiện phân tích cảm xúc"
+    },
+    "title": "Đại lý hệ thống"
+  },
+  "touch": {
+    "title": "Cài đặt chạm"
+  },
+  "tts": {
+    "clientCall": {
+      "desc": "Khi được kích hoạt, dịch vụ tổng hợp giọng nói sẽ được gọi từ khách hàng, tốc độ tổng hợp giọng nói nhanh hơn, nhưng cần có khả năng truy cập internet hoặc sử dụng mạng riêng ảo.",
+      "title": "Gọi từ khách hàng"
+    },
+    "title": "Cài đặt giọng nói"
+  }
+}

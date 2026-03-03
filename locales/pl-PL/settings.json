@@ -1,0 +1,175 @@
+{
+  "common": {
+    "chat": {
+      "avatar": {
+        "desc": "Dostosuj awatar",
+        "title": "Awatar"
+      },
+      "nickName": {
+        "desc": "Dostosuj pseudonim",
+        "placeholder": "Wprowadź pseudonim",
+        "title": "Pseudonim"
+      },
+      "title": "Ustawienia czatu"
+    },
+    "system": {
+      "clear": {
+        "action": "Natychmiast wyczyść",
+        "alert": "Czy na pewno chcesz wyczyścić wszystkie wiadomości sesji?",
+        "desc": "Usunie wszystkie dane sesji i postaci, w tym listę sesji, listę postaci, wiadomości sesji itp.",
+        "success": "Pomyślnie wyczyszczono",
+        "tip": "Operacja nieodwracalna, po usunięciu dane nie będą mogły zostać przywrócone, proszę działać ostrożnie",
+        "title": "Wyczyść wszystkie wiadomości sesji"
+      },
+      "clearCache": {
+        "action": "Wyczyść teraz",
+        "alert": "Czy na pewno chcesz wyczyścić całą pamięć podręczną?",
+        "calculating": "Obliczanie rozmiaru pamięci podręcznej...",
+        "desc": "To spowoduje usunięcie pamięci podręcznej danych pobranych przez aplikację, w tym danych modeli postaci, danych głosowych, danych modeli tańca, danych audio itp.",
+        "success": "Pomyślnie wyczyszczono",
+        "tip": "Operacja jest nieodwracalna, po usunięciu dane będą musiały zostać ponownie pobrane, proszę działać ostrożnie",
+        "title": "Wyczyść pamięć podręczną danych"
+      },
+      "reset": {
+        "action": "Natychmiast zresetuj",
+        "alert": "Czy na pewno chcesz zresetować wszystkie ustawienia systemowe?",
+        "desc": "Zresetuje wszystkie ustawienia systemowe, w tym ustawienia motywu, ustawienia czatu, ustawienia modelu językowego itp.",
+        "success": "Pomyślnie zresetowano",
+        "tip": "Operacja nieodwracalna, po resecie dane nie będą mogły zostać przywrócone, proszę działać ostrożnie",
+        "title": "Resetuj ustawienia systemowe"
+      },
+      "title": "Ustawienia systemowe"
+    },
+    "theme": {
+      "backgroundEffect": {
+        "desc": "Dostosuj efekt tła",
+        "glow": "Blask",
+        "none": "Brak tła",
+        "title": "Efekt tła"
+      },
+      "locale": {
+        "auto": "Podążaj za systemem",
+        "desc": "Dostosuj język systemu",
+        "title": "Język"
+      },
+      "neutralColor": {
+        "desc": "Dostosuj odcienie szarości w zależności od preferencji kolorystycznych",
+        "title": "Kolor neutralny"
+      },
+      "primaryColor": {
+        "desc": "Dostosuj kolor motywu",
+        "title": "Kolor motywu"
+      },
+      "title": "Ustawienia motywu"
+    },
+    "title": "Ustawienia ogólne"
+  },
+  "header": {
+    "desc": "Preferencje i ustawienia modelu",
+    "global": "Ustawienia globalne",
+    "session": "Ustawienia sesji",
+    "sessionDesc": "Ustawienia ról i preferencje sesji",
+    "sessionWithName": "Ustawienia sesji · {{name}}",
+    "title": "Ustawienia"
+  },
+  "llm": {
+    "aesGcm": "Twój klucz i adres proxy będą szyfrowane za pomocą algorytmu <1>AES-GCM</1>",
+    "apiKey": {
+      "desc": "Proszę wprowadzić swój {{name}} klucz API",
+      "placeholder": "{{name}} klucz API",
+      "title": "Klucz API"
+    },
+    "checker": {
+      "button": "Sprawdź",
+      "desc": "Przetestuj, czy klucz API i adres proxy są poprawnie wprowadzone",
+      "error": "Sprawdzenie nie powiodło się",
+      "pass": "Sprawdzenie zakończone sukcesem",
+      "title": "Sprawdzanie łączności"
+    },
+    "customModelCards": {
+      "addNew": "Utwórz i dodaj model {{id}}",
+      "config": "Konfiguracja modelu",
+      "confirmDelete": "Zaraz usuniesz ten niestandardowy model, po usunięciu nie będzie można go przywrócić, proszę działać ostrożnie.",
+      "modelConfig": {
+        "azureDeployName": {
+          "extra": "Pole, które jest rzeczywiście używane w Azure OpenAI",
+          "placeholder": "Proszę wprowadzić nazwę wdrożenia modelu w Azure",
+          "title": "Nazwa wdrożenia modelu"
+        },
+        "displayName": {
+          "placeholder": "Proszę wprowadzić nazwę wyświetlaną modelu, np. ChatGPT, GPT-4 itp.",
+          "title": "Nazwa wyświetlana modelu"
+        },
+        "files": {
+          "extra": "Obecna implementacja przesyłania plików to tylko rozwiązanie typu Hack, przeznaczone do samodzielnego testowania. Pełna funkcjonalność przesyłania plików będzie dostępna w późniejszym terminie.",
+          "title": "Wsparcie dla przesyłania plików"
+        },
+        "functionCall": {
+          "extra": "Ta konfiguracja włączy tylko możliwość wywoływania funkcji w aplikacji, czy model obsługuje wywołania funkcji, zależy od samego modelu, proszę samodzielnie przetestować dostępność wywołań funkcji tego modelu.",
+          "title": "Wsparcie dla wywołań funkcji"
+        },
+        "id": {
+          "extra": "Będzie wyświetlane jako etykieta modelu",
+          "placeholder": "Proszę wprowadzić id modelu, np. gpt-4-turbo-preview lub claude-2.1",
+          "title": "ID modelu"
+        },
+        "modalTitle": "Konfiguracja niestandardowego modelu",
+        "tokens": {
+          "title": "Maksymalna liczba tokenów",
+          "unlimited": "Bez ograniczeń"
+        },
+        "vision": {
+          "extra": "Ta konfiguracja włączy tylko możliwość przesyłania obrazów w aplikacji, czy model obsługuje rozpoznawanie, zależy od samego modelu, proszę samodzielnie przetestować dostępność rozpoznawania wizualnego tego modelu.",
+          "title": "Wsparcie dla rozpoznawania wizualnego"
+        }
+      }
+    },
+    "fetchOnClient": {
+      "desc": "Tryb żądania klienta rozpocznie sesję bezpośrednio z przeglądarki, co może zwiększyć szybkość odpowiedzi",
+      "title": "Użyj trybu żądania klienta"
+    },
+    "fetcher": {
+      "fetch": "Pobierz listę modeli",
+      "fetching": "Pobieranie listy modeli...",
+      "latestTime": "Ostatnia aktualizacja: {{time}}",
+      "noLatestTime": "Lista nie została jeszcze pobrana"
+    },
+    "helpDoc": "Instrukcja konfiguracji",
+    "modelList": {
+      "desc": "Wybierz modele, które mają być wyświetlane w sesji; wybrane modele będą wyświetlane na liście modeli",
+      "placeholder": "Proszę wybrać model z listy",
+      "title": "Lista modeli",
+      "total": "Łącznie dostępnych jest {{count}} modeli"
+    },
+    "proxyUrl": {
+      "desc": "Oprócz domyślnego adresu, musi zawierać http(s)://",
+      "title": "Adres proxy API"
+    },
+    "title": "Model językowy",
+    "waitingForMore": "Więcej modeli jest w <1>planowanej integracji</1>, prosimy o cierpliwość"
+  },
+  "systemAgent": {
+    "customPrompt": {
+      "addPrompt": "Dodaj niestandardowy podpowiedź",
+      "desc": "Po wypełnieniu, asystent systemowy użyje niestandardowej podpowiedzi podczas generowania treści",
+      "placeholder": "Wprowadź niestandardowe słowo kluczowe",
+      "title": "Niestandardowe słowo kluczowe"
+    },
+    "emotionAnalysis": {
+      "label": "Model analizy emocji",
+      "modelDesc": "Określ model używany do analizy emocji",
+      "title": "Automatyczna analiza emocji"
+    },
+    "title": "Agent systemowy"
+  },
+  "touch": {
+    "title": "Ustawienia dotykowe"
+  },
+  "tts": {
+    "clientCall": {
+      "desc": "Po włączeniu, usługa syntezatora mowy będzie wywoływana przez klienta, co przyspieszy proces syntezowania mowy, ale wymaga dostępu do internetu lub możliwości korzystania z sieci zewnętrznej.",
+      "title": "Wywołanie klienta"
+    },
+    "title": "Ustawienia głosowe"
+  }
+}

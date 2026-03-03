@@ -1,0 +1,175 @@
+{
+  "common": {
+    "chat": {
+      "avatar": {
+        "desc": "Pas je profielfoto aan",
+        "title": "Profielfoto"
+      },
+      "nickName": {
+        "desc": "Pas je bijnaam aan",
+        "placeholder": "Voer je bijnaam in",
+        "title": "Bijnaam"
+      },
+      "title": "Chatinstellingen"
+    },
+    "system": {
+      "clear": {
+        "action": "Verwijder nu",
+        "alert": "Bevestig dat je alle gespreksberichten wilt verwijderen?",
+        "desc": "Dit verwijdert alle gespreks- en rolgegevens, inclusief gesprekslijst, rollenlijst, gespreksberichten, enz.",
+        "success": "Verwijderen geslaagd",
+        "tip": "Deze actie kan niet ongedaan gemaakt worden. Na verwijdering kunnen de gegevens niet worden hersteld, wees voorzichtig.",
+        "title": "Verwijder alle gespreksberichten"
+      },
+      "clearCache": {
+        "action": "Direct Wissen",
+        "alert": "Bevestig dat u alle cache wilt wissen?",
+        "calculating": "Cachegrootte aan het berekenen...",
+        "desc": "Dit zal de gedownloade gegevenscache van de applicatie wissen, inclusief modelgegevens van personages, spraakgegevens, modelgegevens van dansen, audiogegevens, enz.",
+        "success": "Wissen Succesvol",
+        "tip": "Deze actie kan niet ongedaan gemaakt worden. Na het wissen moeten de gegevens opnieuw gedownload worden, wees voorzichtig met deze actie.",
+        "title": "Cache Gegevens Wissen"
+      },
+      "reset": {
+        "action": "Reset nu",
+        "alert": "Bevestig dat je alle systeeminstellingen wilt resetten?",
+        "desc": "Dit reset alle systeeminstellingen, inclusief thema-instellingen, chatinstellingen, taalmodelinstellingen, enz.",
+        "success": "Reset geslaagd",
+        "tip": "Deze actie kan niet ongedaan gemaakt worden. Na resetten kunnen de gegevens niet worden hersteld, wees voorzichtig.",
+        "title": "Reset systeeminstellingen"
+      },
+      "title": "Systeeminstellingen"
+    },
+    "theme": {
+      "backgroundEffect": {
+        "desc": "Pas het achtergrond effect aan",
+        "glow": "Gloed",
+        "none": "Geen achtergrond",
+        "title": "Achtergrond effect"
+      },
+      "locale": {
+        "auto": "Volg systeem",
+        "desc": "Pas de systeemtaal aan",
+        "title": "Taal"
+      },
+      "neutralColor": {
+        "desc": "Pas de grijstinten aan met verschillende kleurvoorkeuren",
+        "title": "Neutrale kleur"
+      },
+      "primaryColor": {
+        "desc": "Pas de themakleur aan",
+        "title": "Thema kleur"
+      },
+      "title": "Thema-instellingen"
+    },
+    "title": "Algemene instellingen"
+  },
+  "header": {
+    "desc": "Voorkeuren en modelinstellingen",
+    "global": "Globale instellingen",
+    "session": "Sessie-instellingen",
+    "sessionDesc": "Rolinstellingen en sessievoorkeuren",
+    "sessionWithName": "Sessie-instellingen · {{name}}",
+    "title": "Instellingen"
+  },
+  "llm": {
+    "aesGcm": "Uw sleutel en proxy-adres worden versleuteld met het <1>AES-GCM</1> encryptie-algoritme",
+    "apiKey": {
+      "desc": "Vul uw {{name}} API-sleutel in",
+      "placeholder": "{{name}} API-sleutel",
+      "title": "API-sleutel"
+    },
+    "checker": {
+      "button": "Controleer",
+      "desc": "Test of de API-sleutel en proxy-adres correct zijn ingevuld",
+      "error": "Controle mislukt",
+      "pass": "Controle geslaagd",
+      "title": "Connectiviteitstest"
+    },
+    "customModelCards": {
+      "addNew": "Maak en voeg {{id}} model toe",
+      "config": "Configureer model",
+      "confirmDelete": "U staat op het punt dit aangepaste model te verwijderen. Verwijderen is onomkeerbaar, wees voorzichtig.",
+      "modelConfig": {
+        "azureDeployName": {
+          "extra": "Het veld dat daadwerkelijk wordt aangevraagd in Azure OpenAI",
+          "placeholder": "Voer de modelimplementatienaam in Azure in",
+          "title": "Model implementatienaam"
+        },
+        "displayName": {
+          "placeholder": "Voer de weergavenaam van het model in, bijvoorbeeld ChatGPT, GPT-4, enz.",
+          "title": "Weergavenaam model"
+        },
+        "files": {
+          "extra": "De huidige bestandsuploadimplementatie is slechts een hackoplossing en alleen voor eigen gebruik. Volledige bestandsuploadcapaciteit is in de toekomst beschikbaar.",
+          "title": "Ondersteuning voor bestandsupload"
+        },
+        "functionCall": {
+          "extra": "Deze configuratie schakelt alleen de functieaanroepcapaciteit in de applicatie in. Of functieaanroepen worden ondersteund, hangt volledig af van het model zelf. Test de beschikbaarheid van functieaanroepen van dit model zelf.",
+          "title": "Ondersteuning voor functieaanroepen"
+        },
+        "id": {
+          "extra": "Zal worden weergegeven als modellabel",
+          "placeholder": "Voer model-id in, bijvoorbeeld gpt-4-turbo-preview of claude-2.1",
+          "title": "Model ID"
+        },
+        "modalTitle": "Configuratie van aangepast model",
+        "tokens": {
+          "title": "Maximaal aantal tokens",
+          "unlimited": "Onbeperkt"
+        },
+        "vision": {
+          "extra": "Deze configuratie schakelt alleen de afbeeldinguploadconfiguratie in de applicatie in. Of herkenning wordt ondersteund, hangt volledig af van het model zelf. Test de beschikbaarheid van visuele herkenning van dit model zelf.",
+          "title": "Ondersteuning voor visuele herkenning"
+        }
+      }
+    },
+    "fetchOnClient": {
+      "desc": "De client-aanroepmodus start sessieverzoeken rechtstreeks vanuit de browser, wat de responstijd kan verbeteren.",
+      "title": "Gebruik client-aanroepmodus"
+    },
+    "fetcher": {
+      "fetch": "Haal modellenlijst op",
+      "fetching": "Modellenlijst wordt opgehaald...",
+      "latestTime": "Laatste update tijd: {{time}}",
+      "noLatestTime": "Lijst nog niet opgehaald"
+    },
+    "helpDoc": "Configuratiehandleiding",
+    "modelList": {
+      "desc": "Kies de modellen die in de sessie worden weergegeven; de gekozen modellen worden in de modellenlijst getoond.",
+      "placeholder": "Selecteer een model uit de lijst",
+      "title": "Modellenlijst",
+      "total": "In totaal zijn er {{count}} modellen beschikbaar"
+    },
+    "proxyUrl": {
+      "desc": "Moet http(s):// bevatten, naast het standaardadres.",
+      "title": "API proxy adres"
+    },
+    "title": "Taalmodel",
+    "waitingForMore": "Meer modellen zijn momenteel <1>in planning</1>, blijf op de hoogte."
+  },
+  "systemAgent": {
+    "customPrompt": {
+      "addPrompt": "Voeg aangepaste prompt toe",
+      "desc": "Vul dit in, zodat de systeemassistent de aangepaste prompt gebruikt bij het genereren van inhoud",
+      "placeholder": "Voer aangepaste prompt in",
+      "title": "Aangepaste prompt"
+    },
+    "emotionAnalysis": {
+      "label": "Emotie-analysemode",
+      "modelDesc": "Specificeer het model dat voor emotie-analyse moet worden gebruikt",
+      "title": "Automatische emotie-analyse"
+    },
+    "title": "Systeemagent"
+  },
+  "touch": {
+    "title": "Aanraakinstellingen"
+  },
+  "tts": {
+    "clientCall": {
+      "desc": "Wanneer ingeschakeld, wordt de spraaksynthetiseringsdienst via de cliënt aangeroepen, wat de spraaksynthetisesnelheid verhoogt, maar vereist dat je toegang hebt tot het internet of in staat bent om het externe netwerk te bereiken.",
+      "title": "Cliëntaanroep"
+    },
+    "title": "Spraakinstellingen"
+  }
+}

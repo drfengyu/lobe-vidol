@@ -1,0 +1,175 @@
+{
+  "common": {
+    "chat": {
+      "avatar": {
+        "desc": "自訂頭像",
+        "title": "頭像"
+      },
+      "nickName": {
+        "desc": "自訂暱稱",
+        "placeholder": "請輸入暱稱",
+        "title": "暱稱"
+      },
+      "title": "聊天設定"
+    },
+    "system": {
+      "clear": {
+        "action": "立即清除",
+        "alert": "確認清除所有會話消息?",
+        "desc": "將會清除所有會話與角色數據，包括會話列表、角色列表、會話消息等",
+        "success": "清除成功",
+        "tip": "操作無法撤銷，清除後數據將無法恢復，請慎重操作",
+        "title": "清除所有會話消息"
+      },
+      "clearCache": {
+        "action": "立即清除",
+        "alert": "確認清除所有快取？",
+        "calculating": "計算快取大小中...",
+        "desc": "將會清除應用下載的資料快取，包括角色的模型資料、語音資料、舞蹈的模型資料、音訊資料等",
+        "success": "清除成功",
+        "tip": "操作無法撤銷，清除後資料將需要重新下載，請慎重操作",
+        "title": "清除資料快取"
+      },
+      "reset": {
+        "action": "立即重置",
+        "alert": "確認重置所有系統設定?",
+        "desc": "將會重置所有系統設定，包括主題設定、聊天設定、語言模型設定等",
+        "success": "重置成功",
+        "tip": "操作無法撤銷，重置後數據將無法恢復，請慎重操作",
+        "title": "重置系統設定"
+      },
+      "title": "系統設定"
+    },
+    "theme": {
+      "backgroundEffect": {
+        "desc": "自訂背景效果",
+        "glow": "光輝",
+        "none": "無背景",
+        "title": "背景效果"
+      },
+      "locale": {
+        "auto": "跟隨系統",
+        "desc": "自訂系統語言",
+        "title": "語言"
+      },
+      "neutralColor": {
+        "desc": "不同色彩傾向的灰階自訂",
+        "title": "中性色"
+      },
+      "primaryColor": {
+        "desc": "自訂主題色",
+        "title": "主題色"
+      },
+      "title": "主題設定"
+    },
+    "title": "通用設定"
+  },
+  "header": {
+    "desc": "偏好與模型設定",
+    "global": "全局設定",
+    "session": "會話設定",
+    "sessionDesc": "角色設定與會話偏好",
+    "sessionWithName": "會話設定 · {{name}}",
+    "title": "設定"
+  },
+  "llm": {
+    "aesGcm": "您的密鑰與代理地址等將使用 <1>AES-GCM</1> 加密演算法進行加密",
+    "apiKey": {
+      "desc": "請填寫您的 {{name}} API Key",
+      "placeholder": "{{name}} API Key",
+      "title": "API Key"
+    },
+    "checker": {
+      "button": "檢查",
+      "desc": "測試 Api Key 與代理地址是否正確填寫",
+      "error": "檢查失敗",
+      "pass": "檢查通過",
+      "title": "連通性檢查"
+    },
+    "customModelCards": {
+      "addNew": "創建並添加 {{id}} 模型",
+      "config": "配置模型",
+      "confirmDelete": "即將刪除該自定義模型，刪除後將不可恢復，請謹慎操作。",
+      "modelConfig": {
+        "azureDeployName": {
+          "extra": "在 Azure OpenAI 中實際請求的字段",
+          "placeholder": "請輸入 Azure 中的模型部署名稱",
+          "title": "模型部署名稱"
+        },
+        "displayName": {
+          "placeholder": "請輸入模型的展示名稱，例如 ChatGPT、GPT-4 等",
+          "title": "模型展示名稱"
+        },
+        "files": {
+          "extra": "當前文件上傳實現僅為一種 Hack 方案，僅限自行嘗試。完整文件上傳能力請等待後續實現",
+          "title": "支持文件上傳"
+        },
+        "functionCall": {
+          "extra": "此配置將僅開啟應用中的函數調用能力，是否支持函數調用完全取決於模型本身，請自行測試該模型的函數調用能力可用性",
+          "title": "支持函數調用"
+        },
+        "id": {
+          "extra": "將作為模型標籤進行展示",
+          "placeholder": "請輸入模型id，例如 gpt-4-turbo-preview 或 claude-2.1",
+          "title": "模型 ID"
+        },
+        "modalTitle": "自定義模型配置",
+        "tokens": {
+          "title": "最大 token 數",
+          "unlimited": "無限制"
+        },
+        "vision": {
+          "extra": "此配置將僅開啟應用中的圖片上傳配置，是否支持識別完全取決於模型本身，請自行測試該模型的視覺識別能力可用性",
+          "title": "支持視覺識別"
+        }
+      }
+    },
+    "fetchOnClient": {
+      "desc": "客戶端請求模式將從瀏覽器直接發起會話請求，可提升響應速度",
+      "title": "使用客戶端請求模式"
+    },
+    "fetcher": {
+      "fetch": "獲取模型列表",
+      "fetching": "正在獲取模型列表...",
+      "latestTime": "上次更新時間：{{time}}",
+      "noLatestTime": "暫未獲取列表"
+    },
+    "helpDoc": "配置教程",
+    "modelList": {
+      "desc": "選擇在會話中展示的模型，選擇的模型會在模型列表中展示",
+      "placeholder": "請從列表中選擇模型",
+      "title": "模型列表",
+      "total": "共 {{count}} 個模型可用"
+    },
+    "proxyUrl": {
+      "desc": "除默認地址外，必須包含 http(s)://",
+      "title": "API 代理地址"
+    },
+    "title": "語言模型",
+    "waitingForMore": "更多模型正在 <1>計劃接入</1> 中，敬請期待"
+  },
+  "systemAgent": {
+    "customPrompt": {
+      "addPrompt": "添加自訂提示",
+      "desc": "填寫後，系統助理將在生成內容時使用自訂提示",
+      "placeholder": "請輸入自訂提示詞",
+      "title": "自訂提示詞"
+    },
+    "emotionAnalysis": {
+      "label": "情感分析模型",
+      "modelDesc": "指定用於情感分析的模型",
+      "title": "自動進行情感分析"
+    },
+    "title": "系統代理"
+  },
+  "touch": {
+    "title": "觸摸設定"
+  },
+  "tts": {
+    "clientCall": {
+      "desc": "啟用後，將使用客戶端調用語音合成服務，語音合成速度更快，但需要科學上網或具備訪問外網的能力",
+      "title": "客戶端調用"
+    },
+    "title": "語音設定"
+  }
+}

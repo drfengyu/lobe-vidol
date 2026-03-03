@@ -1,0 +1,128 @@
+{
+  "ModelSelect": {
+    "featureTag": {
+      "custom": "Modello personalizzato, le impostazioni predefinite supportano sia le chiamate di funzione che il riconoscimento visivo. Si prega di verificare la disponibilità di queste capacità in base alla situazione reale",
+      "file": "Questo modello supporta il caricamento di file per la lettura e il riconoscimento",
+      "functionCall": "Questo modello supporta le chiamate di funzione (Function Call)",
+      "tokens": "Questo modello supporta un massimo di {{tokens}} Tokens per singola sessione",
+      "vision": "Questo modello supporta il riconoscimento visivo"
+    },
+    "removed": "Questo modello non è nella lista, se deselezionato verrà rimosso automaticamente"
+  },
+  "actions": {
+    "add": "Aggiungi",
+    "copy": "Copia",
+    "copySuccess": "Copia riuscita",
+    "del": "Elimina",
+    "delAndRegenerate": "Elimina e rigenera",
+    "edit": "Modifica",
+    "goBottom": "Torna in fondo",
+    "regenerate": "Rigenera",
+    "save": "Salva",
+    "share": "Condividi",
+    "tts": "Voce"
+  },
+  "agentInfo": "Informazioni sul ruolo",
+  "agentMarket": "Mercato dei personaggi",
+  "animation": {
+    "animationList": "Elenco delle azioni",
+    "postureList": "Elenco delle posture",
+    "totalCount": "Totale {{total}} elementi"
+  },
+  "apiKey": {
+    "addProxy": "Aggiungi indirizzo proxy OpenAI (opzionale)",
+    "closeTip": "Chiudi il suggerimento",
+    "confirmRetry": "Conferma e riprova",
+    "proxyDocs": "Non sei sicuro di come richiedere una chiave API?",
+    "startDesc": "Inserisci la tua chiave API OpenAI per iniziare la conversazione. L'app non registrerà la tua chiave API.",
+    "startTitle": "Chiave API personalizzata"
+  },
+  "background": {
+    "backgroundList": "Elenco sfondi",
+    "totalCount": "Totale {{total}} elementi"
+  },
+  "callOff": "Riaggancia",
+  "camera": "Videochiamata",
+  "chat": "Chat",
+  "chatList": "Elenco chat",
+  "clear": {
+    "action": "Cancella contesto",
+    "alert": "Sei sicuro di voler eliminare i messaggi storici?",
+    "tip": "Questa operazione è irreversibile, procedi con cautela"
+  },
+  "danceList": "Elenco delle danze",
+  "danceMarket": "Mercato delle danze",
+  "delSession": "Elimina la sessione",
+  "delSessionAlert": "Sei sicuro di voler eliminare la conversazione? Una volta eliminata, non potrà essere recuperata, si prega di procedere con cautela!",
+  "editRole": {
+    "action": "Modifica ruolo"
+  },
+  "enableHistoryCount": {
+    "alias": "Nessun limite",
+    "limited": "Include solo {{number}} messaggi di conversazione",
+    "setlimited": "Imposta il numero di messaggi storici",
+    "title": "Limita il numero di messaggi storici",
+    "unlimited": "Nessun limite ai messaggi storici"
+  },
+  "info": {
+    "background": "Sfondo",
+    "chat": "chat",
+    "dance": "danza",
+    "motions": "movimenti",
+    "posture": "posizione",
+    "stage": "Palcoscenico"
+  },
+  "input": {
+    "alert": "Si prega di notare: tutto ciò che dice l'agente è generato dall'AI",
+    "placeholder": "Inserisci il contenuto per iniziare a chattare",
+    "send": "Invia",
+    "warp": "A capo"
+  },
+  "interactive": "Interattivo",
+  "noDanceList": "Nessuna playlist disponibile, puoi iscriverti alle danze che ti piacciono tramite il mercato",
+  "noRoleList": "Nessun elenco di ruoli disponibile",
+  "noSession": "Nessuna sessione disponibile, puoi creare un ruolo personalizzato tramite +, oppure aggiungere ruoli dalla pagina di scoperta",
+  "selectModel": "Seleziona un modello",
+  "sessionCreate": "Crea chat",
+  "sessionList": "Elenco delle sessioni",
+  "share": {
+    "downloadScreenshot": "Scarica screenshot",
+    "imageType": "Formato immagine",
+    "screenshot": "Screenshot",
+    "share": "Condividi",
+    "shareGPT": "Condividi GPT",
+    "shareToGPT": "Genera link di condivisione ShareGPT",
+    "withBackground": "Includi immagine di sfondo",
+    "withFooter": "Includi piè di pagina",
+    "withSystemRole": "Includi impostazioni del ruolo dell'assistente"
+  },
+  "stage": {
+    "stageList": "Elenco dei palchi",
+    "totalCount": "Totale {{total}} elementi"
+  },
+  "token": {
+    "overload": "Token sovraccarico",
+    "remained": "Token rimanenti",
+    "tokenCount": "Numero di Token",
+    "useToken": "Calcolo della quantità di Token consumati, inclusi messaggi, impostazioni del personaggio e contesto: {{usedTokens}} / {{maxValue}}",
+    "used": "Token utilizzati"
+  },
+  "toolBar": {
+    "axes": "Assi",
+    "cameraControl": "Controllo della fotocamera",
+    "cameraHelper": "Aiuto alla fotocamera",
+    "downloading": "Download del modello in corso, attendere prego...",
+    "fullScreen": "Attiva/disattiva la modalità a schermo intero",
+    "grid": "Griglia",
+    "interactiveOff": "Disattiva interazione touch",
+    "interactiveOn": "Attiva interazione touch",
+    "resetCamera": "Ripristina fotocamera",
+    "resetToIdle": "Ferma l'azione di danza",
+    "screenShot": "Scatta foto"
+  },
+  "tts": {
+    "combine": "Sintesi vocale",
+    "record": "Riconoscimento vocale (richiede una connessione VPN)"
+  },
+  "voiceOn": "Attiva voce"
+}

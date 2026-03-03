@@ -1,0 +1,17 @@
+{
+  "agent": {
+    "hello": "Olá!",
+    "meta": {
+      "description": "Este é um personagem personalizado",
+      "name": "Personagem Personalizado"
+    }
+  },
+  "greet": "Olá, eu sou {{name}}, como posso ajudá-lo?",
+  "loading": {
+    "model": "Carregando o modelo...",
+    "motions": "Pré-carregando arquivos de animação...",
+    "voices": "Gerando arquivos de voz...",
+    "waiting": "Preparando todo o meu mundo para você..."
+  },
+  "loadingTitle": "Aplicação em inicialização, por favor aguarde..."
+}

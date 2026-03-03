@@ -1,0 +1,82 @@
+{
+  "actions": {
+    "pause": "Pausar",
+    "play": "Reproducir"
+  },
+  "addPlay": "Añadir a la lista",
+  "addPlaySuccess": "Añadido a la lista de reproducción",
+  "cancelAddPlay": "¿Está seguro de que desea cancelar la suscripción a la música {{musicName}}?",
+  "cancelSubscribed": "Cancelar suscripción",
+  "confirmClearPlayList": "¿Estás seguro de que deseas borrar la lista de reproducción?",
+  "create": {
+    "audio": {
+      "desc": "Archivo de audio del baile",
+      "required": "Por favor, sube un archivo de audio",
+      "title": "Archivo de audio",
+      "upload": "Seleccionar archivo de audio"
+    },
+    "camera": {
+      "desc": "Selecciona el archivo de cámara (.vmd)",
+      "required": "Por favor, selecciona un archivo de cámara",
+      "title": "Archivo de cámara",
+      "upload": "Seleccionar archivo de cámara"
+    },
+    "danceId": {
+      "desc": "Identificador único del baile",
+      "placeholder": "Introduce el identificador del baile, debe ser único, por ejemplo, vidol-dance-gokuraku",
+      "random": "Generar ID aleatorio",
+      "required": "Por favor, introduce el ID del baile",
+      "title": "ID del baile"
+    },
+    "image": {
+      "desc": "Imagen de portada del baile",
+      "required": "Por favor, sube una imagen de portada",
+      "title": "Imagen de portada",
+      "upload": "Seleccionar imagen de portada"
+    },
+    "messages": {
+      "fileUploadError": "Error en la carga del archivo",
+      "uploadFailed": "Carga fallida",
+      "uploadSuccess": "Carga exitosa"
+    },
+    "name": {
+      "desc": "Nombre que se mostrará del baile",
+      "required": "Por favor, introduce el nombre del baile",
+      "title": "Nombre del baile"
+    },
+    "readme": {
+      "desc": "Documento de instrucciones del baile (opcional)",
+      "placeholder": "Introduce la descripción detallada del baile",
+      "title": "Documento de instrucciones"
+    },
+    "src": {
+      "desc": "Selecciona el archivo de danza (.vmd)",
+      "required": "Por favor, selecciona un archivo de danza",
+      "title": "Archivo de danza",
+      "upload": "Seleccionar archivo de danza"
+    },
+    "submit": "Enviar",
+    "title": "Crear baile",
+    "upload": {
+      "audio": "Subir archivo de música",
+      "camera": "Subir archivo de cámara",
+      "cover": "Subir portada",
+      "dance": "Subir archivo de baile",
+      "loading": "Subiendo, por favor no cierre la página...",
+      "thumb": "Subir miniatura"
+    }
+  },
+  "createDance": "Crea tu baile favorito",
+  "dance": "bailar",
+  "danceList": "Lista de danzas",
+  "danceManual": "Manual de Danza",
+  "download": {
+    "audio": "Descargar música",
+    "camera": "Descargar movimientos de cámara",
+    "src": "Descargar movimientos de baile"
+  },
+  "findDance": "Encuentra tu baile favorito",
+  "menu": "Menú",
+  "musicAndDance": "Mercado de Danza",
+  "play": "Reproducir"
+}

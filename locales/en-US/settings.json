@@ -1,0 +1,175 @@
+{
+  "common": {
+    "chat": {
+      "avatar": {
+        "desc": "Customize your avatar",
+        "title": "Avatar"
+      },
+      "nickName": {
+        "desc": "Customize your nickname",
+        "placeholder": "Please enter your nickname",
+        "title": "Nickname"
+      },
+      "title": "Chat Settings"
+    },
+    "system": {
+      "clear": {
+        "action": "Clear Now",
+        "alert": "Are you sure you want to clear all session messages?",
+        "desc": "This will clear all session and character data, including session list, character list, session messages, etc.",
+        "success": "Clear Successful",
+        "tip": "This action cannot be undone. Once cleared, the data cannot be recovered. Please proceed with caution.",
+        "title": "Clear All Session Messages"
+      },
+      "clearCache": {
+        "action": "Clear Now",
+        "alert": "Are you sure you want to clear all caches?",
+        "calculating": "Calculating cache size...",
+        "desc": "This will clear the application's downloaded data cache, including character model data, voice data, dance model data, audio data, and more.",
+        "success": "Clear Successful",
+        "tip": "This action cannot be undone. After clearing, data will need to be re-downloaded. Please proceed with caution.",
+        "title": "Clear Data Cache"
+      },
+      "reset": {
+        "action": "Reset Now",
+        "alert": "Are you sure you want to reset all system settings?",
+        "desc": "This will reset all system settings, including theme settings, chat settings, language model settings, etc.",
+        "success": "Reset Successful",
+        "tip": "This action cannot be undone. Once reset, the data cannot be recovered. Please proceed with caution.",
+        "title": "Reset System Settings"
+      },
+      "title": "System Settings"
+    },
+    "theme": {
+      "backgroundEffect": {
+        "desc": "Customize background effects",
+        "glow": "Glow",
+        "none": "No Background",
+        "title": "Background Effect"
+      },
+      "locale": {
+        "auto": "Follow system",
+        "desc": "Customize system language",
+        "title": "Language"
+      },
+      "neutralColor": {
+        "desc": "Customize grayscale for different color tendencies",
+        "title": "Neutral Color"
+      },
+      "primaryColor": {
+        "desc": "Customize the primary theme color",
+        "title": "Primary Color"
+      },
+      "title": "Theme Settings"
+    },
+    "title": "General Settings"
+  },
+  "header": {
+    "desc": "Preferences and Model Settings",
+    "global": "Global Settings",
+    "session": "Session Settings",
+    "sessionDesc": "Role Configuration and Session Preferences",
+    "sessionWithName": "Session Settings · {{name}}",
+    "title": "Settings"
+  },
+  "llm": {
+    "aesGcm": "Your key and proxy address will be encrypted using the <1>AES-GCM</1> encryption algorithm.",
+    "apiKey": {
+      "desc": "Please enter your {{name}} API Key.",
+      "placeholder": "{{name}} API Key",
+      "title": "API Key"
+    },
+    "checker": {
+      "button": "Check",
+      "desc": "Test if the API Key and proxy address are filled in correctly.",
+      "error": "Check Failed",
+      "pass": "Check passed",
+      "title": "Connectivity Check"
+    },
+    "customModelCards": {
+      "addNew": "Create and add {{id}} model",
+      "config": "Configure Model",
+      "confirmDelete": "You are about to delete this custom model. Once deleted, it cannot be recovered. Please proceed with caution.",
+      "modelConfig": {
+        "azureDeployName": {
+          "extra": "The field used for actual requests in Azure OpenAI.",
+          "placeholder": "Please enter the model deployment name in Azure.",
+          "title": "Model Deployment Name"
+        },
+        "displayName": {
+          "placeholder": "Please enter the display name of the model, e.g., ChatGPT, GPT-4, etc.",
+          "title": "Model Display Name"
+        },
+        "files": {
+          "extra": "The current file upload implementation is just a hack solution, limited to self-experimentation. Please wait for full file upload capabilities in future implementations.",
+          "title": "File Upload Support"
+        },
+        "functionCall": {
+          "extra": "This configuration will only enable function calling capabilities in the application. Whether function calling is supported depends entirely on the model itself. Please test the function calling capabilities of the model yourself.",
+          "title": "Function Calling Support"
+        },
+        "id": {
+          "extra": "This will be displayed as the model label.",
+          "placeholder": "Please enter the model ID, e.g., gpt-4-turbo-preview or claude-2.1.",
+          "title": "Model ID"
+        },
+        "modalTitle": "Custom Model Configuration",
+        "tokens": {
+          "title": "Maximum Token Count",
+          "unlimited": "Unlimited"
+        },
+        "vision": {
+          "extra": "This configuration will only enable image upload capabilities in the application. Whether recognition is supported depends entirely on the model itself. Please test the visual recognition capabilities of the model yourself.",
+          "title": "Visual Recognition Support"
+        }
+      }
+    },
+    "fetchOnClient": {
+      "desc": "The client request mode will initiate session requests directly from the browser, which can enhance response speed.",
+      "title": "Use Client Request Mode"
+    },
+    "fetcher": {
+      "fetch": "Fetch Model List",
+      "fetching": "Fetching model list...",
+      "latestTime": "Last updated: {{time}}",
+      "noLatestTime": "List not yet fetched"
+    },
+    "helpDoc": "Configuration Guide",
+    "modelList": {
+      "desc": "Select the models to display in the session; the chosen models will be shown in the model list.",
+      "placeholder": "Please select a model from the list",
+      "title": "Model List",
+      "total": "{{count}} models available"
+    },
+    "proxyUrl": {
+      "desc": "Must include http(s)://, in addition to the default address.",
+      "title": "API Proxy Address"
+    },
+    "title": "Language Model",
+    "waitingForMore": "More models are currently <1>being planned for integration</1>, please stay tuned."
+  },
+  "systemAgent": {
+    "customPrompt": {
+      "addPrompt": "Add Custom Prompt",
+      "desc": "Once filled out, the system assistant will use the custom prompt when generating content",
+      "placeholder": "Please enter custom prompt",
+      "title": "Custom Prompt"
+    },
+    "emotionAnalysis": {
+      "label": "Emotion Analysis Model",
+      "modelDesc": "Specify the model used for emotion analysis",
+      "title": "Automatic Emotion Analysis"
+    },
+    "title": "System Agent"
+  },
+  "touch": {
+    "title": "Touch Settings"
+  },
+  "tts": {
+    "clientCall": {
+      "desc": "When enabled, the voice synthesis service will be called from the client, resulting in faster voice synthesis, but it requires a VPN or the ability to access the internet.",
+      "title": "Client Call"
+    },
+    "title": "Voice Settings"
+  }
+}

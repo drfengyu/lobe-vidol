@@ -1,0 +1,17 @@
+{
+  "agent": {
+    "hello": "Hallo!",
+    "meta": {
+      "description": "Dies ist eine benutzerdefinierte Rolle",
+      "name": "Benutzerdefinierte Rolle"
+    }
+  },
+  "greet": "Hallo, ich bin {{name}}. Wie kann ich Ihnen helfen?",
+  "loading": {
+    "model": "Modell wird geladen...",
+    "motions": "Lade die Bewegungsdateien vor...",
+    "voices": "Sprachdateien werden generiert...",
+    "waiting": "Ich bereite gerade meine ganze Welt für dich vor..."
+  },
+  "loadingTitle": "Anwendung wird initialisiert, bitte warten..."
+}

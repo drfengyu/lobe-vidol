@@ -1,0 +1,175 @@
+{
+  "common": {
+    "chat": {
+      "avatar": {
+        "desc": "Avatar personnalisé",
+        "title": "Avatar"
+      },
+      "nickName": {
+        "desc": "Surnom personnalisé",
+        "placeholder": "Veuillez entrer un surnom",
+        "title": "Surnom"
+      },
+      "title": "Paramètres de chat"
+    },
+    "system": {
+      "clear": {
+        "action": "Effacer immédiatement",
+        "alert": "Confirmer l'effacement de tous les messages de conversation ?",
+        "desc": "Cela effacera toutes les données de conversation et de personnage, y compris la liste des conversations, la liste des personnages, les messages de conversation, etc.",
+        "success": "Effacement réussi",
+        "tip": "Cette action ne peut pas être annulée, les données ne pourront pas être récupérées après l'effacement, veuillez agir avec prudence",
+        "title": "Effacer tous les messages de conversation"
+      },
+      "clearCache": {
+        "action": "Effacer maintenant",
+        "alert": "Confirmer l'effacement de tout le cache ?",
+        "calculating": "Calcul de la taille du cache en cours...",
+        "desc": "Cela effacera le cache des données téléchargées par l'application, y compris les données des modèles de personnages, les données vocales, les données des modèles de danse, les données audio, etc.",
+        "success": "Effacement réussi",
+        "tip": "Cette action ne peut pas être annulée. Après l'effacement, les données devront être téléchargées à nouveau. Veuillez agir avec prudence.",
+        "title": "Effacer le cache des données"
+      },
+      "reset": {
+        "action": "Réinitialiser immédiatement",
+        "alert": "Confirmer la réinitialisation de tous les paramètres système ?",
+        "desc": "Cela réinitialisera tous les paramètres système, y compris les paramètres de thème, les paramètres de chat, les paramètres de modèle linguistique, etc.",
+        "success": "Réinitialisation réussie",
+        "tip": "Cette action ne peut pas être annulée, les données ne pourront pas être récupérées après la réinitialisation, veuillez agir avec prudence",
+        "title": "Réinitialiser les paramètres système"
+      },
+      "title": "Paramètres système"
+    },
+    "theme": {
+      "backgroundEffect": {
+        "desc": "Personnalisation de l'effet de fond",
+        "glow": "Lueur",
+        "none": "Pas de fond",
+        "title": "Effet de fond"
+      },
+      "locale": {
+        "auto": "Suivre le système",
+        "desc": "Langue du système personnalisée",
+        "title": "Langue"
+      },
+      "neutralColor": {
+        "desc": "Personnalisation des nuances de gris selon les inclinaisons de couleur",
+        "title": "Couleur neutre"
+      },
+      "primaryColor": {
+        "desc": "Couleur de thème personnalisée",
+        "title": "Couleur principale"
+      },
+      "title": "Paramètres de thème"
+    },
+    "title": "Paramètres généraux"
+  },
+  "header": {
+    "desc": "Préférences et paramètres du modèle",
+    "global": "Paramètres globaux",
+    "session": "Paramètres de session",
+    "sessionDesc": "Configuration des rôles et préférences de session",
+    "sessionWithName": "Paramètres de session · {{name}}",
+    "title": "Paramètres"
+  },
+  "llm": {
+    "aesGcm": "Votre clé et l'adresse du proxy seront chiffrées à l'aide de l'algorithme de chiffrement <1>AES-GCM</1>",
+    "apiKey": {
+      "desc": "Veuillez entrer votre {{name}} clé API",
+      "placeholder": "{{name}} clé API",
+      "title": "Clé API"
+    },
+    "checker": {
+      "button": "Vérifier",
+      "desc": "Tester si la clé API et l'adresse du proxy sont correctement renseignées",
+      "error": "Échec de la vérification",
+      "pass": "Vérification réussie",
+      "title": "Vérification de connectivité"
+    },
+    "customModelCards": {
+      "addNew": "Créer et ajouter le modèle {{id}}",
+      "config": "Configurer le modèle",
+      "confirmDelete": "Vous allez supprimer ce modèle personnalisé. Une fois supprimé, il ne pourra pas être récupéré. Veuillez agir avec prudence.",
+      "modelConfig": {
+        "azureDeployName": {
+          "extra": "Champ réellement demandé dans Azure OpenAI",
+          "placeholder": "Veuillez entrer le nom de déploiement du modèle dans Azure",
+          "title": "Nom de déploiement du modèle"
+        },
+        "displayName": {
+          "placeholder": "Veuillez entrer le nom d'affichage du modèle, par exemple ChatGPT, GPT-4, etc.",
+          "title": "Nom d'affichage du modèle"
+        },
+        "files": {
+          "extra": "La mise en œuvre actuelle du téléchargement de fichiers n'est qu'une solution de contournement, à essayer par vous-même. La capacité complète de téléchargement de fichiers sera disponible dans une mise à jour ultérieure.",
+          "title": "Téléchargement de fichiers pris en charge"
+        },
+        "functionCall": {
+          "extra": "Cette configuration n'activera que la capacité d'appel de fonction dans l'application. La prise en charge des appels de fonction dépend entièrement du modèle lui-même. Veuillez tester la disponibilité des appels de fonction de ce modèle.",
+          "title": "Appels de fonction pris en charge"
+        },
+        "id": {
+          "extra": "S'affichera comme une étiquette de modèle",
+          "placeholder": "Veuillez entrer l'id du modèle, par exemple gpt-4-turbo-preview ou claude-2.1",
+          "title": "ID du modèle"
+        },
+        "modalTitle": "Configuration du modèle personnalisé",
+        "tokens": {
+          "title": "Nombre maximum de tokens",
+          "unlimited": "Illimité"
+        },
+        "vision": {
+          "extra": "Cette configuration n'activera que la capacité de téléchargement d'images dans l'application. La prise en charge de la reconnaissance dépend entièrement du modèle lui-même. Veuillez tester la disponibilité de la capacité de reconnaissance visuelle de ce modèle.",
+          "title": "Reconnaissance visuelle prise en charge"
+        }
+      }
+    },
+    "fetchOnClient": {
+      "desc": "Le mode de requête client lancera la demande de session directement depuis le navigateur, ce qui peut améliorer la vitesse de réponse",
+      "title": "Utiliser le mode de requête client"
+    },
+    "fetcher": {
+      "fetch": "Obtenir la liste des modèles",
+      "fetching": "Obtention de la liste des modèles en cours...",
+      "latestTime": "Dernière mise à jour : {{time}}",
+      "noLatestTime": "Liste non encore obtenue"
+    },
+    "helpDoc": "Tutoriel de configuration",
+    "modelList": {
+      "desc": "Sélectionnez les modèles à afficher dans la session, les modèles sélectionnés seront affichés dans la liste des modèles",
+      "placeholder": "Veuillez sélectionner un modèle dans la liste",
+      "title": "Liste des modèles",
+      "total": "Un total de {{count}} modèles disponibles"
+    },
+    "proxyUrl": {
+      "desc": "En plus de l'adresse par défaut, doit inclure http(s)://",
+      "title": "Adresse du proxy API"
+    },
+    "title": "Modèle de Langue",
+    "waitingForMore": "D'autres modèles sont en <1>planification d'intégration</1>, restez à l'écoute"
+  },
+  "systemAgent": {
+    "customPrompt": {
+      "addPrompt": "Ajouter un prompt personnalisé",
+      "desc": "Une fois rempli, l'assistant système utilisera le prompt personnalisé lors de la génération de contenu",
+      "placeholder": "Veuillez entrer le mot-clé du prompt personnalisé",
+      "title": "Mot-clé du prompt personnalisé"
+    },
+    "emotionAnalysis": {
+      "label": "Modèle d'analyse des émotions",
+      "modelDesc": "Modèle spécifié pour l'analyse des émotions",
+      "title": "Analyse des émotions automatique"
+    },
+    "title": "Agent système"
+  },
+  "touch": {
+    "title": "Paramètres de toucher"
+  },
+  "tts": {
+    "clientCall": {
+      "desc": "Une fois activé, le service de synthèse vocale sera appelé par le client, ce qui permet une vitesse de synthèse vocale plus rapide, mais nécessite un accès à Internet ou la capacité d'accéder à des réseaux externes.",
+      "title": "Appel client"
+    },
+    "title": "Paramètres de synthèse vocale"
+  }
+}

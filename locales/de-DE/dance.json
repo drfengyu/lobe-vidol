@@ -1,0 +1,82 @@
+{
+  "actions": {
+    "pause": "Pause",
+    "play": "Abspielen"
+  },
+  "addPlay": "Zur Liste hinzufügen",
+  "addPlaySuccess": "Erfolgreich zur Wiedergabeliste hinzugefügt",
+  "cancelAddPlay": "Möchten Sie das Abonnement für die Musik {{musicName}} wirklich kündigen?",
+  "cancelSubscribed": "Abonnement kündigen",
+  "confirmClearPlayList": "Möchten Sie die Wiedergabeliste wirklich löschen?",
+  "create": {
+    "audio": {
+      "desc": "Audio-Datei des Tanzes",
+      "required": "Bitte Audio-Datei hochladen",
+      "title": "Audio-Datei",
+      "upload": "Audio-Datei auswählen"
+    },
+    "camera": {
+      "desc": "Wählen Sie eine Kameradatei (.vmd)",
+      "required": "Bitte wählen Sie eine Kameradatei aus",
+      "title": "Kameradatei",
+      "upload": "Kameradatei auswählen"
+    },
+    "danceId": {
+      "desc": "Eindeutiger Identifikator für den Tanz",
+      "placeholder": "Bitte geben Sie die eindeutige Kennung des Tanzes ein, z. B. vidol-dance-gokuraku",
+      "random": "ID zufällig generieren",
+      "required": "Bitte Tanz-ID eingeben",
+      "title": "Tanz-ID"
+    },
+    "image": {
+      "desc": "Titelbild des Tanzes",
+      "required": "Bitte Titelbild hochladen",
+      "title": "Titelbild",
+      "upload": "Coverbild auswählen"
+    },
+    "messages": {
+      "fileUploadError": "Fehler beim Hochladen der Datei",
+      "uploadFailed": "Hochladen fehlgeschlagen",
+      "uploadSuccess": "Hochladen erfolgreich"
+    },
+    "name": {
+      "desc": "Anzeigename des Tanzes",
+      "required": "Bitte Tanzname eingeben",
+      "title": "Tanzname"
+    },
+    "readme": {
+      "desc": "Dokumentation des Tanzes (optional)",
+      "placeholder": "Bitte geben Sie eine detaillierte Beschreibung des Tanzes ein",
+      "title": "Dokumentation"
+    },
+    "src": {
+      "desc": "Wählen Sie eine Tanzdatei (.vmd)",
+      "required": "Bitte wählen Sie eine Tanzdatei aus",
+      "title": "Tanzdatei",
+      "upload": "Tanzdatei auswählen"
+    },
+    "submit": "Einreichen",
+    "title": "Tanz erstellen",
+    "upload": {
+      "audio": "Musikdatei hochladen",
+      "camera": "Kameradatei hochladen",
+      "cover": "Cover hochladen",
+      "dance": "Tanzdatei hochladen",
+      "loading": "Hochladen wird verarbeitet, bitte schließen Sie die Seite nicht...",
+      "thumb": "Vorschaubild hochladen"
+    }
+  },
+  "createDance": "Erstelle deinen Lieblings-Tanz",
+  "dance": "Tanzen",
+  "danceList": "Tanzliste",
+  "danceManual": "Tanzhandbuch",
+  "download": {
+    "audio": "Musik herunterladen",
+    "camera": "Kamerabewegungen herunterladen",
+    "src": "Tanzbewegungen herunterladen"
+  },
+  "findDance": "Finde deinen Lieblings-Tanz",
+  "menu": "Menü",
+  "musicAndDance": "Tanzmarkt",
+  "play": "Abspielen"
+}
