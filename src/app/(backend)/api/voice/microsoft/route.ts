@@ -17,8 +17,10 @@ export const POST = async (req: Request) => {
   };
 
   // Call create method to synthesize speech
-  const response = await tts.create(payload);
-  const mp3Buffer = Buffer.from(await response.arrayBuffer());
-
-  return new Response(mp3Buffer);
+  const arrayBuffer = await response.arrayBuffer();
+return new Response(arrayBuffer, {
+  headers: {
+    'Content-Type': 'audio/mpeg',
+  },
+});
 };
