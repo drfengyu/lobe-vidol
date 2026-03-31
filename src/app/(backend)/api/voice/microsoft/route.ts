@@ -1,12 +1,10 @@
 import { MicrosoftSpeechTTS } from '@lobehub/tts';
-import { Buffer } from 'node:buffer';
 
-// Instantiate EdgeSpeechTTS
 const tts = new MicrosoftSpeechTTS({ locale: 'en-US' });
 
 export const POST = async (req: Request) => {
   const { message, pitch, speed, voice } = await req.json();
-  // Create speech synthesis request payload
+
   const payload = {
     input: message,
     options: {
@@ -16,11 +14,12 @@ export const POST = async (req: Request) => {
     },
   };
 
-  // Call create method to synthesize speech
-  const arrayBuffer = await response.arrayBuffer();
-return new Response(arrayBuffer, {
-  headers: {
-    'Content-Type': 'audio/mpeg',
-  },
-});
+  // ✅ 调用 tts.create 获取音频数据
+  const arrayBuffer = await tts.create(payload);
+
+  return new Response(arrayBuffer, {
+    headers: {
+      'Content-Type': 'audio/mpeg',
+    },
+  });
 };
