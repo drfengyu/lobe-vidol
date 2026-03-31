@@ -5,7 +5,7 @@ const TIME_DOMAIN_DATA_LENGTH = 2048;
 export class LipSync {
   public readonly audio: AudioContext;
   public readonly analyser: AnalyserNode;
-  public readonly timeDomainData: Float32Array;
+  public readonly timeDomainData: Float32Array<ArrayBuffer>;
   public bufferSource: AudioBufferSourceNode | undefined;
 
   public constructor(audio: AudioContext) {
