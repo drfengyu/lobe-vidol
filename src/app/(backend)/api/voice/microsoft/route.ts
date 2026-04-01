@@ -1,8 +1,6 @@
 import { OpenAITTS } from '@lobehub/tts';
 
-const tts = new OpenAITTS({
-  voice: 'alloy', // 可自定义默认音色
-});
+const tts = new OpenAITTS(); // ❌ 构造时别放 voice
 
 export const POST = async (req: Request) => {
   try {
@@ -12,10 +10,10 @@ export const POST = async (req: Request) => {
     const speedValue = Number(speed ?? 1);
 
     const response = await tts.create({
-      model: 'gpt-4o-mini-tts', // ✅ 模型写在这里！
+      model: 'gpt-4o-mini-tts', // 语音模型
       input: message,
       options: {
-        voice: voice || 'alloy',
+        voice: voice || 'alloy', // ✅ 声音参数放在这里
         format: 'mp3',
         rate: speedValue - 1,
         pitch: (pitchValue - 1) / 2,
