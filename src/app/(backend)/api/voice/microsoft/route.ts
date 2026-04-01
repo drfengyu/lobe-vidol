@@ -1,6 +1,6 @@
 import { OpenAITTS } from '@lobehub/tts';
 
-const tts = new OpenAITTS(); // ❌ 构造时别放 voice
+const tts = new OpenAITTS();
 
 export const POST = async (req: Request) => {
   try {
@@ -9,15 +9,13 @@ export const POST = async (req: Request) => {
     const pitchValue = Number(pitch ?? 1);
     const speedValue = Number(speed ?? 1);
 
+    // 🪄 新写法：全部字段提到根层级
     const response = await tts.create({
-      model: 'gpt-4o-mini-tts', // 语音模型
+      model: 'gpt-4o-mini-tts',
       input: message,
-      options: {
-        voice: voice || 'alloy', // ✅ 声音参数放在这里
-        format: 'mp3',
-        rate: speedValue - 1,
-        pitch: (pitchValue - 1) / 2,
-      },
+      voice: voice || 'alloy',
+      format: 'mp3',
+      // 🧠 pitch/speed 可用自定义方式控制，但不在类型定义里
     });
 
     return new Response(await response.arrayBuffer(), {
