@@ -69,6 +69,8 @@
     ]
   },
   "dependencies": {
+    "@emotion/is-prop-valid": "^1.2.2",
+    "framer-motion": "^11.11.9",
     "@ant-design/icons": "^5.5.2",
     "@anthropic-ai/sdk": "^0.32.1",
     "@aws-sdk/client-bedrock-runtime": "^3.706.0",
