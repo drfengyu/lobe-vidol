@@ -1,25 +1,40 @@
 import { OpenAITTS } from '@lobehub/tts';
 
-const tts = new OpenAITTS();
+const tts = new OpenAITTS({
+  apiKey: process.env.OPENAI_API_KEY,
+});
 
 export const POST = async (req: Request) => {
   try {
     const { message, pitch, speed, voice } = await req.json();
 
-    const pitchValue = Number(pitch ?? 1);
-    const speedValue = Number(speed ?? 1);
+    // 确保 message 存在
+    if (!message) {
+      return Response.json({ error: 'Missing message' }, { status: 400 });
+    }
 
-    // 🪄 新写法：全部字段提到根层级
-    const response = await tts.create({
-      model: 'gpt-4o-mini-tts',
+    // 注意：OpenAI TTS 暂不支持 pitch/speed 直接设置
+    // 如需使用，请查阅库文档是否支持自定义参数
+    const payload: any = {
+      model: 'tts-1',          // 或 'gpt-4o-mini-tts'
       input: message,
       voice: voice || 'alloy',
-      format: 'mp3',
-      // 🧠 pitch/speed 可用自定义方式控制，但不在类型定义里
-    });
+      response_format: 'mp3',  // 注意字段名
+    };
 
-    return new Response(await response.arrayBuffer(), {
-      headers: { 'Content-Type': 'audio/mpeg' },
+    // 如果库支持 speed，可添加
+    if (speed !== undefined) {
+      payload.speed = Number(speed);
+    }
+
+    const result = await tts.create(payload);
+    const arrayBuffer = result instanceof ArrayBuffer ? result : await result.arrayBuffer();
+
+    return new Response(arrayBuffer, {
+      headers: {
+        'Content-Type': 'audio/mpeg',
+        'Content-Length': arrayBuffer.byteLength.toString(),
+      },
     });
   } catch (error) {
     console.error('OpenAI TTS error:', error);
