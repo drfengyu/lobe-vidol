@@ -1,11 +1,10 @@
 import { OpenAITTS } from '@lobehub/tts';
 
 const tts = new OpenAITTS({
-  model: 'gpt-4o-mini-tts', // 可换成 gpt-4o-tts 或别的 model
-  voice: 'alloy',           // OpenAI 默认可选 voices: alloy, verse, coral, sage...
+  voice: 'alloy', // 可自定义默认音色
 });
 
-export const POST = async (req) => {
+export const POST = async (req: Request) => {
   try {
     const { message, pitch, speed, voice } = await req.json();
 
@@ -13,6 +12,7 @@ export const POST = async (req) => {
     const speedValue = Number(speed ?? 1);
 
     const response = await tts.create({
+      model: 'gpt-4o-mini-tts', // ✅ 模型写在这里！
       input: message,
       options: {
         voice: voice || 'alloy',
