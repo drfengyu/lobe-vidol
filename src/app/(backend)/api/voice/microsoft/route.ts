@@ -12,7 +12,7 @@ export const POST = async (req: Request) => {
       input: message,
       options: {
         model: 'tts-1',      // 官方支持模型，如 tts-1 或 gpt-4o-mini-tts
-        voice: voice || 'alloy', // 可选音色：alloy / verse / coral / sage...
+        voice: voice || 'shimmer', // 可选音色：alloy / verse / coral / sage...
       },
     });
 
