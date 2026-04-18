@@ -82,6 +82,8 @@ const withPWA = isProd
       register: false,
       swDest: 'public/sw.js',
       swSrc: 'src/app/sw.ts',
+      // 增加预缓存大小限制，单位：字节（例如 15 MB）
+      maximumFileSizeToCacheInBytes: 15 * 1024 * 1024, // 15 MB
     })
   : noWrapper;
 
