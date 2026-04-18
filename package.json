@@ -27,7 +27,7 @@
   "author": "LobeHub <i@lobehub.com>",
   "sideEffects": false,
   "scripts": {
-    "build": "next build",
+    "build": "NODE_OPTIONS='--max-old-space-size=4096' next build",
     "dev": "next dev -p 3003",
     "docs:i18n": "lobe-i18n md && npm run lint:md",
     "i18n": "npm run workflow:i18n && lobe-i18n",
