@@ -46,136 +46,34 @@ const Footer: ShareMessage = {
 
 export interface SessionStore {
   abortController?: AbortController;
-  /**
-   * 当前会话 ID
-   */
   activeId: string;
-  /**
-   * 聊天加载中的消息 ID
-   */
   chatLoadingId: string | undefined;
-
-  /**
-   * 清空历史消息
-   */
   clearHistory: () => void;
-  /**
-   *  清空会话
-   */
   clearSessionStorage: () => Promise<void>;
-  /**
-   * 创建会话
-   * @param agent
-   * @returns
-   */
   createSession: (agent: Agent) => void;
-  /**
-   * 默认会话
-   */
   defaultSession: Session;
-  /**
-   * 删除并重新生成消息
-   */
   delAndRegenerateMessage: (id: string) => void;
-  /**
-   *  删除消息
-   */
   deleteMessage: (id: string) => void;
-  /**
-   * 分发消息
-   * @param payload - 消息分发参数
-   */
   dispatchMessage: (payload: MessageActionType) => void;
-  /**
-   * 请求 AI 回复
-   * @param messages
-   * @returns
-   */
   fetchAIResponse: (messages: ChatMessage[], assistantId: string) => void;
-  /**
-   * 触摸响应开关
-   */
   interactive: boolean;
-  /**
-   * 当前消息输入
-   */
   messageInput: string;
-
-  /**
-   * 重新生成消息
-   * @returns
-   */
   regenerateMessage: (id: string) => void;
-  /**
-   *  移除会话
-   */
   removeSessionByAgentId: (id: string) => void;
-  /**
-   * 发送消息
-   * @param message 消息内容
-   * @returns
-   */
   sendMessage: (message: string) => void;
-
-  /**
-   * 会话列表
-   */
   sessionList: Session[];
-
-  /**
-   * 设置消息输入
-   * @param messageInput
-   */
   setMessageInput: (messageInput: string) => void;
   shareLoading: boolean;
   shareToShareGPT: (props: { withSystemRole?: boolean }) => Promise<void>;
-  /**
-   * 停止生成消息
-   */
   stopGenerateMessage: () => void;
-  /**
-   * 停止语音消息
-   */
   stopTtsMessage: () => void;
-  /**
-   * 切换会话
-   * @param agent
-   * @returns
-   */
   switchSession: (agentId: string) => void;
-
-  /**
-   * 触摸响应开关
-   */
   toggleInteractive: () => void;
-  /**
-   * 语音加载中的消息 ID
-   */
   ttsLoadingId: string | undefined;
-  /**
-   * 语音消息
-   */
   ttsMessage: (id: string, content: string) => void;
-
-  /**
-   * 更新消息
-   * @returns
-   */
   updateMessage: (id: string, content: string) => void;
-  /**
-   * 更新会话聊天配置
-   * @param config
-   */
   updateSessionChatConfig: (config: DeepPartial<SessionChatConfig>) => void;
-  /**
-   * 更新会话配置
-   * @param config
-   */
   updateSessionConfig: (config: DeepPartial<Session['config']>) => void;
-  /**
-   * 更新会话消息
-   * @param messages
-   */
   updateSessionMessages: (messages: ChatMessage[]) => void;
 }
 
@@ -210,14 +108,12 @@ export const createSessionStore: StateCreator<SessionStore, [['zustand/devtools'
     });
 
     set({ sessionList: newSessionList });
-    switchSession(agent.agentId); // 切换会话
+    switchSession(agent.agentId);
   },
   deleteMessage: (id) => {
     const { dispatchMessage } = get();
     dispatchMessage({
-      payload: {
-        id,
-      },
+      payload: { id },
       type: 'DELETE_MESSAGE',
     });
   },
@@ -231,42 +127,41 @@ export const createSessionStore: StateCreator<SessionStore, [['zustand/devtools'
     const { updateSessionMessages } = get();
     const session = sessionSelectors.currentSession(get());
 
-    if (!session) {
-      return;
-    }
+    if (!session) return;
 
     const messages = messageReducer(session.messages, payload);
-
     updateSessionMessages(messages);
   },
+
+  // ========== 修复 stopGenerateMessage：添加防御性检查并清除 controller ==========
   stopGenerateMessage: () => {
     const { abortController } = get();
-    if (!abortController) return;
-    abortController.abort();
-    set({ chatLoadingId: undefined });
+    if (abortController && typeof abortController.abort === 'function') {
+      abortController.abort();
+    } else if (abortController) {
+      console.warn('[SessionStore] stopGenerateMessage: abortController is invalid', abortController);
+    }
+    set({ chatLoadingId: undefined, abortController: undefined });
   },
+
+  // ========== 修复 fetchAIResponse：使用 try...finally 确保清理 controller ==========
   fetchAIResponse: async (messages, assistantId) => {
     const { dispatchMessage } = get();
     const currentSession = sessionSelectors.currentSession(get());
     const currentAgent = sessionSelectors.currentAgent(get());
 
-    if (!currentSession || !currentAgent) {
-      return;
-    }
+    if (!currentSession || !currentAgent) return;
 
     const abortController = new AbortController();
-
     set({ chatLoadingId: assistantId, abortController });
 
     let receivedMessage = '';
     let aiMessage = '';
-    const sentences = [];
+    const sentences: string[] = [];
 
     const { voiceOn, chatMode } = useGlobalStore.getState();
 
-    // 处理历史消息数
     const chatConfig = sessionSelectors.currentSessionChatConfig(get());
-
     const preprocessMsgs = chatHelpers.getSlicedMessagesWithConfig(messages, chatConfig, true);
 
     if (currentAgent.systemRole) {
@@ -278,96 +173,69 @@ export const createSessionStore: StateCreator<SessionStore, [['zustand/devtools'
       content: message.content,
     }));
 
-    await chatCompletion(
-      {
-        model: currentAgent.model || DEFAULT_LLM_CONFIG.model,
-        provider: currentAgent.provider || DEFAULT_LLM_CONFIG.provider,
-        stream: true,
-        ...(currentAgent.params || DEFAULT_LLM_CONFIG.params),
-        messages: postMessages,
-      },
-      {
-        onErrorHandle: (error) => {
-          dispatchMessage({
-            payload: {
-              id: assistantId,
-              key: 'error',
-              value: error,
-            },
-            type: 'UPDATE_MESSAGE',
-          });
+    try {
+      await chatCompletion(
+        {
+          model: currentAgent.model || DEFAULT_LLM_CONFIG.model,
+          provider: currentAgent.provider || DEFAULT_LLM_CONFIG.provider,
+          stream: true,
+          ...(currentAgent.params || DEFAULT_LLM_CONFIG.params),
+          messages: postMessages,
         },
-        onMessageHandle: async (chunk) => {
-          switch (chunk.type) {
-            case 'text': {
-              // 只有视频模式下才需要连续语音合成
-              if (voiceOn && chatMode === 'camera') {
-                // 语音合成
-                receivedMessage += chunk.text;
-                // 文本切割
-                const sentenceMatch = receivedMessage.match(/^(.+[\n~。！．？]|.{10,}[,、])/);
-                if (sentenceMatch && sentenceMatch[0]) {
-                  const sentence = sentenceMatch[0];
-                  sentences.push(sentence);
-                  receivedMessage = receivedMessage.slice(sentence.length).trimStart();
+        {
+          onErrorHandle: (error) => {
+            dispatchMessage({
+              payload: { id: assistantId, key: 'error', value: error },
+              type: 'UPDATE_MESSAGE',
+            });
+          },
+          onMessageHandle: async (chunk) => {
+            switch (chunk.type) {
+              case 'text': {
+                if (voiceOn && chatMode === 'camera') {
+                  receivedMessage += chunk.text;
+                  const sentenceMatch = receivedMessage.match(/^(.+[\n~。！．？]|.{10,}[,、])/);
+                  if (sentenceMatch && sentenceMatch[0]) {
+                    const sentence = sentenceMatch[0];
+                    sentences.push(sentence);
+                    receivedMessage = receivedMessage.slice(sentence.length).trimStart();
 
-                  if (
-                    !sentence.replaceAll(
-                      /^[\s()[\]}«»‹›〈〉《》「」『』【】〔〕〘〙〚〛（）［］｛]+$/g,
-                      '',
-                    )
-                  ) {
-                    return;
+                    if (
+                      !sentence.replaceAll(
+                        /^[\s()[\]}«»‹›〈〉《》「」『』【】〔〕〘〙〚〛（）［］｛]+$/g,
+                        '',
+                      )
+                    ) {
+                      return;
+                    }
+                    handleSpeakAi(sentence);
                   }
-                  handleSpeakAi(sentence);
                 }
+
+                aiMessage += chunk.text;
+                dispatchMessage({
+                  payload: { id: assistantId, key: 'content', value: aiMessage },
+                  type: 'UPDATE_MESSAGE',
+                });
+                break;
               }
-
-              // 对话更新
-              aiMessage += chunk.text;
-
-              dispatchMessage({
-                payload: {
-                  id: assistantId,
-                  key: 'content',
-                  value: aiMessage,
-                },
-                type: 'UPDATE_MESSAGE',
-              });
-              break;
+              // case 'tool_calls': ... 保持不变
             }
-
-            // is this message is just a tool call
-            // case 'tool_calls': {
-            // internal_toggleToolCallingStreaming(assistantId, chunk.isAnimationActives);
-            // internal_dispatchMessage({
-            //   id: assistantId,
-            //   type: 'updateMessage',
-            //   value: { tools: get().internal_transformToolCalls(chunk.tool_calls) },
-            // });
-            // isFunctionCall = true;
-            // }
-          }
+          },
+          signal: abortController.signal,
         },
-        signal: abortController.signal,
-      },
-    );
-
-    set({ chatLoadingId: undefined });
+      );
+    } finally {
+      // 确保无论成功、失败还是中止，都清理 loading 状态和 controller
+      set({ chatLoadingId: undefined, abortController: undefined });
+    }
   },
 
-  /**
-   * 语音消息
-   */
   ttsMessage: async (id: string, content: string) => {
     set({ ttsLoadingId: id });
     await handleSpeakAi(content, {
-      onComplete: () => {
-        set({ ttsLoadingId: undefined });
-      },
-      onError: () => {
-        set({ ttsLoadingId: undefined });
-      },
+      onComplete: () => set({ ttsLoadingId: undefined }),
+      onError: () => set({ ttsLoadingId: undefined }),
     });
   },
   stopTtsMessage: () => {
@@ -396,38 +264,28 @@ export const createSessionStore: StateCreator<SessionStore, [['zustand/devtools'
       });
 
       for (const i of messages) {
-        switch (i.role) {
-          case 'assistant': {
-            draft.push({ from: 'gpt', value: i.content });
-            break;
-          }
-
-          case 'user': {
-            draft.push({ from: 'human', value: i.content });
-            break;
-          }
+        if (i.role === 'assistant') {
+          draft.push({ from: 'gpt', value: i.content });
+        } else if (i.role === 'user') {
+          draft.push({ from: 'human', value: i.content });
         }
       }
-
       draft.push(Footer);
     });
 
     set({ shareLoading: true });
-
     const res = await shareService.createShareGPTUrl({
       avatarUrl: DEFAULT_USER_AVATAR_URL,
       items: shareMsgs,
     });
     set({ shareLoading: false });
-
     window.open(res, '_blank');
   },
   regenerateMessage: (id) => {
     const { dispatchMessage, fetchAIResponse } = get();
     const currentSession = sessionSelectors.currentSession(get());
-    if (!currentSession) {
-      return;
-    }
+    if (!currentSession) return;
+
     const chats = sessionSelectors.currentChats(get());
     const currentIndex = chats.findIndex((item) => item.id === id);
     const currentMessage = chats[currentIndex];
@@ -440,28 +298,23 @@ export const createSessionStore: StateCreator<SessionStore, [['zustand/devtools'
         break;
       }
       case 'assistant': {
-        // 消息是 AI 发出的因此需要找到它的 user 消息
         const userId = currentMessage.parentId;
         const userIndex = chats.findIndex((c) => c.id === userId);
-        // 如果消息没有 parentId，那么同 user/function 模式
         contextMessages = chats.slice(0, userIndex < 0 ? currentIndex + 1 : userIndex + 1);
         break;
       }
     }
 
     const latestMsg = contextMessages.findLast((s) => s.role === 'user');
-
     if (!latestMsg) return;
 
     const assistantId = nanoid();
-
-    // 添加机器人消息占位
     dispatchMessage({
       payload: {
         content: LOADING_FLAG,
         id: assistantId,
         parentId: latestMsg.id,
-        role: 'assistant', // 占位符
+        role: 'assistant',
       },
       type: 'ADD_MESSAGE',
     });
@@ -470,48 +323,37 @@ export const createSessionStore: StateCreator<SessionStore, [['zustand/devtools'
   },
   removeSessionByAgentId: (id) => {
     const { sessionList, activeId } = get();
-
     const sessions = produce(sessionList, (draft) => {
       const index = draft.findIndex((session) => session.agentId === id);
-      if (index === -1) return;
-      draft.splice(index, 1);
+      if (index !== -1) draft.splice(index, 1);
     });
     set({ sessionList: sessions });
-
-    if (activeId === id) {
-      set({ activeId: LOBE_VIDOL_DEFAULT_AGENT_ID });
-    }
+    if (activeId === id) set({ activeId: LOBE_VIDOL_DEFAULT_AGENT_ID });
   },
+
+  // ========== 修复 sendMessage：在发送前停止当前生成 ==========
   sendMessage: async (message: string) => {
-    const { dispatchMessage, fetchAIResponse } = get();
+    const { stopGenerateMessage, dispatchMessage, fetchAIResponse } = get();
+    // 停止当前正在进行的 AI 回复
+    stopGenerateMessage();
+
     const currentSession = sessionSelectors.currentSession(get());
-    if (!currentSession) {
-      return;
-    }
+    if (!currentSession) return;
 
     const userId = nanoid();
-
-    // 添加用户消息
     dispatchMessage({
-      payload: {
-        content: message,
-        id: userId,
-        role: 'user',
-      },
+      payload: { content: message, id: userId, role: 'user' },
       type: 'ADD_MESSAGE',
     });
 
     const currentChats = sessionSelectors.currentChats(get());
-
     const assistantId = nanoid();
-
-    // 添加机器人消息占位
     dispatchMessage({
       payload: {
         content: LOADING_FLAG,
         id: assistantId,
         parentId: userId,
-        role: 'assistant', // 占位符
+        role: 'assistant',
       },
       type: 'ADD_MESSAGE',
     });
@@ -527,7 +369,6 @@ export const createSessionStore: StateCreator<SessionStore, [['zustand/devtools'
     set({ activeId: agentId });
     useAgentStore.setState({ currentIdentifier: agentId }, false, `switchSession/${agentId}`);
   },
-
   toggleInteractive: () => {
     const { interactive: touchOn } = get();
     set({ interactive: !touchOn });
@@ -535,11 +376,7 @@ export const createSessionStore: StateCreator<SessionStore, [['zustand/devtools'
   updateMessage: (id, content) => {
     const { dispatchMessage } = get();
     dispatchMessage({
-      payload: {
-        id,
-        key: 'content',
-        value: content,
-      },
+      payload: { id, key: 'content', value: content },
       type: 'UPDATE_MESSAGE',
     });
   },
@@ -553,8 +390,7 @@ export const createSessionStore: StateCreator<SessionStore, [['zustand/devtools'
     } else {
       const sessions = produce(sessionList, (draft) => {
         const index = draft.findIndex((session) => session.agentId === activeId);
-        if (index === -1) return;
-        draft[index].config = merge(draft[index].config, config);
+        if (index !== -1) draft[index].config = merge(draft[index].config, config);
       });
       set({ sessionList: sessions });
     }
@@ -573,8 +409,7 @@ export const createSessionStore: StateCreator<SessionStore, [['zustand/devtools'
     } else {
       const sessions = produce(sessionList, (draft) => {
         const index = draft.findIndex((session) => session.agentId === activeId);
-        if (index === -1) return;
-        draft[index].messages = messages;
+        if (index !== -1) draft[index].messages = messages;
       });
       set({ sessionList: sessions });
     }
@@ -582,16 +417,14 @@ export const createSessionStore: StateCreator<SessionStore, [['zustand/devtools'
 });
 
 const persistOptions: PersistOptions<SessionStore> = {
-  name: SESSION_STORAGE_KEY, // name of the item in the storage (must be unique)
+  name: SESSION_STORAGE_KEY,
   storage: createJSONStorage(() => vidolStorage),
   version: 0,
 };
 
 export const useSessionStore = createWithEqualityFn<SessionStore>()(
   persist(
-    devtools(createSessionStore, {
-      name: 'VIDOL_SESSION_STORE',
-    }),
+    devtools(createSessionStore, { name: 'VIDOL_SESSION_STORE' }),
     persistOptions,
   ),
   shallow,
