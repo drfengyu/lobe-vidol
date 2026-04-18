@@ -17,20 +17,18 @@ export class LipSync {
   }
 
   public update(): LipSyncAnalyzeResult {
-    this.analyser.getFloatTimeDomainData(this.timeDomainData);
+    // 类型断言：解决 Vercel 构建环境中的类型不兼容问题
+    this.analyser.getFloatTimeDomainData(this.timeDomainData as Float32Array<ArrayBuffer>);
 
     let volume = 0;
     for (let i = 0; i < TIME_DOMAIN_DATA_LENGTH; i++) {
       volume = Math.max(volume, Math.abs(this.timeDomainData[i]));
     }
 
-    // cook
     volume = 1 / (1 + Math.exp(-30 * volume + 5));
     if (volume < 0.1) volume = 0;
 
-    return {
-      volume,
-    };
+    return { volume };
   }
 
   public async playFromArrayBuffer(buffer: ArrayBuffer, onEnded?: () => void) {
